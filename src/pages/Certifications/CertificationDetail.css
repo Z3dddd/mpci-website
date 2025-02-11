@@ -1,0 +1,143 @@
+.certification-detail {
+  padding-top: 80px;
+}
+
+.certification-detail-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+.certification-detail-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.certification-detail-hero p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  color: #28a745;
+}
+
+.certification-detail-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.back-button {
+  display: inline-block;
+  color: #28a745;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #218838;
+}
+
+.certification-detail-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification-detail-image {
+  height: 300px;
+  background: url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
+}
+
+.certification-info {
+  padding: 2rem;
+}
+
+.info-section {
+  margin-bottom: 2rem;
+}
+
+.info-section h2 {
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.info-section p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  color: #666;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.benefits-list li::before {
+  content: "•";
+  color: #28a745;
+  position: absolute;
+  left: 0;
+}
+
+.certification-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.meta-item h3 {
+  color: #28a745;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta-item p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.certification-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.certification-not-found h1 {
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .certification-detail-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .certification-detail-hero p {
+    font-size: 1.2rem;
+  }
+
+  .certification-meta {
+    grid-template-columns: 1fr;
+  }
+} 

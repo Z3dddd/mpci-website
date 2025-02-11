@@ -1,0 +1,101 @@
+.certifications {
+  padding-top: 80px;
+}
+
+.certifications-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+.certifications-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.certifications-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+.certifications-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.certification-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+}
+
+.certification-image {
+  height: 160px;
+  background: url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
+}
+
+.certification-card h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 1.5rem 0.5rem;
+  color: #1a1a1a;
+}
+
+.certification-card > p {
+  color: #28a745;
+  margin: 0 1.5rem;
+  font-weight: 500;
+}
+
+.certification-details {
+  padding: 1.5rem;
+}
+
+.certification-details p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.validity {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: #28a745;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .certifications-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+} 
