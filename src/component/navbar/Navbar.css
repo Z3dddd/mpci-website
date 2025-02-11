@@ -67,7 +67,7 @@
 
 .navbar-menu li a:hover,
 .navbar-menu li a.active {
-  color: #007bff;
+  color: #28a745;
 }
 
 .navbar-menu li a::after {
@@ -77,7 +77,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #007bff;
+  background-color: #28a745;
   transition: width 0.3s ease;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .cta-button a {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white !important;
   padding: 0.8rem 1.5rem !important;
   border-radius: 5px;
@@ -95,7 +95,7 @@
 }
 
 .cta-button a:hover {
-  background-color: #0056b3;
+  background-color: #218838;
 }
 
 .mobile-menu-button {
