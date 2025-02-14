@@ -11,19 +11,20 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
   padding: 0 2rem;
 }
 
 .about-hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .about-hero p {
   font-size: 1.2rem;
   max-width: 600px;
   opacity: 0.9;
+  color: white;
 }
 
 .company-info {
@@ -119,6 +120,18 @@
 
 .team-member {
   text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(86, 88, 89, 0.1);
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(86, 88, 89, 0.15);
 }
 
 .member-image {
@@ -132,11 +145,11 @@
 .team-member h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #1a1a1a;
+  color: #565859;
 }
 
 .team-member p {
-  color: #666;
+  color: #6E7476;
 }
 
 @media (max-width: 768px) {

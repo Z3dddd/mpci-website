@@ -20,8 +20,13 @@ function Navbar() {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="company-name">SteelMod</span>
-          <span className="company-tagline">Construction Solutions</span>
+          <div className="logo-wrapper">
+            <span className="company-name">MPCI</span>
+            <div className="tagline-wrapper">
+              <span className="company-tagline-top">Modular Prefabricated</span>
+              <span className="company-tagline-bottom">Construction Industry</span>
+            </div>
+          </div>
         </Link>
 
         <div className="mobile-menu-button" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -52,12 +57,14 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>
+              Blog
+            </Link>
+          </li>
+          <li>
             <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
               Contact
             </Link>
-          </li>
-          <li className="cta-button">
-            <Link to="/contact">Get a Quote</Link>
           </li>
         </ul>
       </div>

@@ -1,7 +1,19 @@
 import React from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './Contact.css';
 
 function Contact() {
+  const mapStyles = {
+    height: "400px",
+    width: "100%"
+  };
+  
+  // Example location in Dubai, UAE (Dubai Mall area)
+  const defaultCenter = {
+    lat: 25.197197,
+    lng: 55.274376
+  };
+
   return (
     <div className="contact">
       <section className="contact-hero">
@@ -14,8 +26,8 @@ function Contact() {
           <h2>Our Office</h2>
           <div className="info-item">
             <h3>Address</h3>
-            <p>123 Business Avenue</p>
-            <p>Industrial District</p>
+            <p>Business Bay</p>
+            <p>Sheikh Zayed Road</p>
             <p>Dubai, UAE</p>
           </div>
           <div className="info-item">
@@ -24,7 +36,7 @@ function Contact() {
           </div>
           <div className="info-item">
             <h3>Email</h3>
-            <p>info@yourcompany.com</p>
+            <p>info@mpci.ae</p>
           </div>
           <div className="info-item">
             <h3>Working Hours</h3>
@@ -49,7 +61,7 @@ function Contact() {
               <select required>
                 <option value="">Select Service</option>
                 <option value="modular-construction">Modular Construction</option>
-                <option value="steel-fabrication">Steel Fabrication</option>
+                <option value="prefabricated-solutions">Prefabricated Solutions</option>
                 <option value="consultation">Consultation</option>
                 <option value="other">Other</option>
               </select>
@@ -63,8 +75,18 @@ function Contact() {
       </div>
 
       <section className="map">
-        {/* Placeholder for Google Maps integration */}
-        <div className="map-container"></div>
+        <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+          <GoogleMap
+            mapContainerStyle={mapStyles}
+            zoom={15}
+            center={defaultCenter}
+          >
+            <Marker
+              position={defaultCenter}
+              title="MPCI Office"
+            />
+          </GoogleMap>
+        </LoadScript>
       </section>
     </div>
   );

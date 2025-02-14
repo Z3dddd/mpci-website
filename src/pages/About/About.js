@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 
 function About() {
@@ -42,21 +43,21 @@ function About() {
       <section className="team">
         <h2>Our Leadership Team</h2>
         <div className="team-grid">
-          <div className="team-member">
+          <Link to="/team/syed-attaullah-quadri" className="team-member">
             <div className="member-image"></div>
-            <h3>John Smith</h3>
+            <h3>Syed Attaullah Quadri</h3>
             <p>Chief Executive Officer</p>
-          </div>
-          <div className="team-member">
+          </Link>
+          <Link to="/team/amtul-khatija" className="team-member">
             <div className="member-image"></div>
-            <h3>Sarah Johnson</h3>
+            <h3>Amtul Khatija</h3>
             <p>Technical Director</p>
-          </div>
-          <div className="team-member">
+          </Link>
+          <Link to="/team/syed-zaid-quadri" className="team-member">
             <div className="member-image"></div>
-            <h3>Michael Chen</h3>
+            <h3>Syed Zaid Quadri</h3>
             <p>Operations Manager</p>
-          </div>
+          </Link>
         </div>
       </section>
     </div>

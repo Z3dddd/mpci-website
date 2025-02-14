@@ -44,7 +44,7 @@
 .contact-info h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #1a1a1a;
+  color: #4D4F50;
 }
 
 .info-item {
@@ -53,12 +53,12 @@
 
 .info-item h3 {
   font-size: 1.2rem;
-  color: #1a1a1a;
+  color: #4D4F50;
   margin-bottom: 0.5rem;
 }
 
 .info-item p {
-  color: #666;
+  color: #6E7476;
   line-height: 1.6;
 }
 
@@ -72,7 +72,7 @@
 .contact-form h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #1a1a1a;
+  color: #4D4F50;
 }
 
 .form-group {
@@ -94,11 +94,11 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #28a745;
+  border-color: #6E7476;
 }
 
 .submit-button {
-  background-color: #28a745;
+  background-color: #4D4F50;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -110,17 +110,20 @@
 }
 
 .submit-button:hover {
-  background-color: #218838;
+  background-color: #6E7476;
 }
 
 .map {
-  margin-top: 4rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
 }
 
-.map-container {
-  height: 400px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
+.map h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4D4F50;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

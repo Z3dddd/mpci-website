@@ -58,11 +58,11 @@
 .product-card h2 {
   font-size: 1.5rem;
   margin: 1.5rem;
-  color: #1a1a1a;
+  color: #565859;
 }
 
 .product-card p {
-  color: #666;
+  color: #6E7476;
   margin: 0 1.5rem;
   line-height: 1.6;
 }
@@ -74,7 +74,7 @@
 }
 
 .product-features li {
-  color: #666;
+  color: #6E7476;
   margin-bottom: 0.5rem;
   padding-left: 1.5rem;
   position: relative;
@@ -82,13 +82,13 @@
 
 .product-features li::before {
   content: "•";
-  color: #28a745;
+  color: #565859;
   position: absolute;
   left: 0;
 }
 
 .learn-more-btn {
-  background-color: #28a745;
+  background-color: #565859;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -99,7 +99,14 @@
 }
 
 .learn-more-btn:hover {
-  background-color: #218838;
+  background-color: #6E7476;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #565859;
 }
 
 @media (max-width: 768px) {

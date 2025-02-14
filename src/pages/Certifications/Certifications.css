@@ -18,6 +18,7 @@
 .certifications-hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .certifications-hero p {
@@ -42,7 +43,7 @@
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(86, 88, 89, 0.1);
   transition: transform 0.3s ease;
   text-decoration: none;
   display: block;
@@ -51,6 +52,7 @@
 
 .certification-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(86, 88, 89, 0.15);
 }
 
 .certification-image {
@@ -61,11 +63,11 @@
 .certification-card h2 {
   font-size: 1.5rem;
   margin: 1.5rem 1.5rem 0.5rem;
-  color: #1a1a1a;
+  color: #565859;
 }
 
 .certification-card > p {
-  color: #28a745;
+  color: #6E7476;
   margin: 0 1.5rem;
   font-weight: 500;
 }
@@ -75,15 +77,15 @@
 }
 
 .certification-details p {
-  color: #666;
+  color: #6E7476;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 .validity {
   display: inline-block;
-  background-color: #e8f5e9;
-  color: #28a745;
+  background-color: #f0f1f2;
+  color: #565859;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;

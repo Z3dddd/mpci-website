@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
@@ -7,8 +8,8 @@ function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>Leading the Future of Modular Construction</h1>
-          <p>Innovative pre-fabricated steel solutions for modern construction needs</p>
-          <button className="cta-button">Discover Our Solutions</button>
+          <p>Pioneering Innovation in Modular and Prefabricated Construction Solutions</p>
+          <Link to="/products" className="cta-button">Discover Our Solutions</Link>
         </div>
       </section>
 

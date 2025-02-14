@@ -1,33 +1,37 @@
-.certification-detail {
+.team-member-page {
   padding-top: 80px;
 }
 
-.certification-detail-hero {
+.team-member-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
               url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
   padding: 0 2rem;
 }
 
-.certification-detail-hero h1 {
+.team-member-hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: white;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.certification-detail-hero p {
+.team-member-hero p {
   font-size: 1.5rem;
+  color: white;
   opacity: 0.9;
-  color: #9A9C9D;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.certification-detail-content {
-  max-width: 1000px;
+.team-member-content {
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 0 2rem;
 }
@@ -45,99 +49,114 @@
   color: #6E7476;
 }
 
-.certification-detail-card {
+.team-member-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(86, 88, 89, 0.1);
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.certification-detail-image {
+.team-member-image {
+  width: 100%;
   height: 300px;
+  border-radius: 10px;
   background: url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
 }
 
-.certification-info {
-  padding: 2rem;
+.team-member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.info-section {
-  margin-bottom: 2rem;
+.bio-section,
+.achievements-section,
+.education-section {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f0f1f2;
 }
 
-.info-section h2 {
+.bio-section h2,
+.achievements-section h2,
+.education-section h2 {
   color: #565859;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.info-section p {
-  color: #6E7476;
-  line-height: 1.8;
-  font-size: 1.1rem;
+.short-bio {
+  font-size: 1.2rem;
+  color: #565859;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
-.benefits-list {
+.bio-section p {
+  color: #6E7476;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.achievements-section ul {
   list-style: none;
   padding: 0;
 }
 
-.benefits-list li {
+.achievements-section li {
   color: #6E7476;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   padding-left: 1.5rem;
   position: relative;
-  font-size: 1.1rem;
 }
 
-.benefits-list li::before {
+.achievements-section li::before {
   content: "•";
   color: #565859;
   position: absolute;
   left: 0;
 }
 
-.certification-meta {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  background-color: #f0f1f2;
-  padding: 2rem;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
-
-.meta-item h3 {
-  color: #565859;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.meta-item p {
+.education-section p {
   color: #6E7476;
   font-size: 1.1rem;
 }
 
-.certification-not-found {
+.team-member-not-found {
   text-align: center;
   padding: 4rem 2rem;
 }
 
-.certification-not-found h1 {
+.team-member-not-found h1 {
   color: #565859;
   margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
-  .certification-detail-hero h1 {
+  .team-member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member-hero h1 {
     font-size: 2.5rem;
   }
 
-  .certification-detail-hero p {
+  .team-member-hero p {
     font-size: 1.2rem;
   }
 
-  .certification-meta {
-    grid-template-columns: 1fr;
+  .team-member-info {
+    padding: 0;
+  }
+
+  .bio-section p,
+  .short-bio,
+  .achievements-section ul {
+    padding: 0;
   }
 } 
