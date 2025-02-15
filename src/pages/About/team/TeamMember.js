@@ -81,8 +81,6 @@ function TeamMember() {
         <Link to="/about" className="back-button">← Back to About</Link>
         
         <div className="team-member-grid">
-          <div className="team-member-image"></div>
-          
           <div className="team-member-info">
             <div className="bio-section">
               <h2>About</h2>
@@ -106,6 +104,8 @@ function TeamMember() {
               <p>{member.education}</p>
             </div>
           </div>
+          
+          <div className="team-member-image"></div>
         </div>
       </div>
     </div>

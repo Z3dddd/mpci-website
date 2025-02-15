@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
               url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
   display: flex;
   align-items: center;

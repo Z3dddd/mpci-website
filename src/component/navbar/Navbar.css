@@ -128,7 +128,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     flex-direction: column;
     padding: 1rem 0;
     gap: 1rem;

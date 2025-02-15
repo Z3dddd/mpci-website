@@ -51,7 +51,7 @@
 
 .team-member-grid {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr 300px;
   gap: 3rem;
   background-color: white;
   border-radius: 10px;
@@ -66,13 +66,14 @@
   width: 100%;
   height: 300px;
   border-radius: 10px;
-  background: url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
+  background: url('https://placehold.co/700x700') center/cover;
 }
 
 .team-member-info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  text-align: left;
 }
 
 .bio-section,
@@ -140,6 +141,10 @@
 @media (max-width: 768px) {
   .team-member-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .team-member-image {
+    order: -1;
   }
 
   .team-member-hero h1 {
