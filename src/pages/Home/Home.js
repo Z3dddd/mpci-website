@@ -7,8 +7,8 @@ function Home() {
     <div className="home">
       <section className="hero">
         <div className="hero-content">
-          <h1>Leading the Future of Modular Construction</h1>
-          <p>Pioneering Innovation in Modular and Prefabricated Construction Solutions</p>
+          <h1>Leading the Future of Modular Systems</h1>
+          <p>Pioneering Innovation in Modular and Prefabricated Construction Systems</p>
           <Link to="/products" className="cta-button">Discover Our Solutions</Link>
         </div>
       </section>
