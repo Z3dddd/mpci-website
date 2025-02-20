@@ -1,0 +1,126 @@
+.catalogue-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.catalogue-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #565859 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.catalogue-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.catalogue-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.catalogue-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.catalogue-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.catalogue-content {
+  margin-bottom: 1.5rem;
+}
+
+.catalogue-card h3 {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.catalogue-card p {
+  color: #565859;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.file-size {
+  display: block;
+  color: #6E7476;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.download-button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.download-button:hover {
+  background-color: #565859;
+}
+
+@media (max-width: 768px) {
+  .catalogue-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .catalogue-hero h1 {
+    font-size: 2rem;
+  }
+
+  .catalogue-container {
+    padding: 0 1rem 3rem;
+  }
+
+  .catalogue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalogue-card {
+    padding: 1.5rem;
+  }
+} 

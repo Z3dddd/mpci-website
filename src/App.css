@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -145,7 +148,7 @@ h6 {
 
 p {
   margin-bottom: 1rem;
-  color: #6E7476;
+  color: #ffffff;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -368,4 +371,8 @@ a {
 .navbar.scrolled .navbar-menu li a:hover,
 .navbar.scrolled .navbar-menu li a.active {
   color: rgba(0, 0, 0, 0.8);
+}
+
+.content-wrapper {
+  flex: 1 0 auto;
 }

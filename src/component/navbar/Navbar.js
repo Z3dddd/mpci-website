@@ -57,8 +57,8 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>
-              Blog
+            <Link to="/catalogue" className={location.pathname === '/catalogue' ? 'active' : ''}>
+              Catalogue
             </Link>
           </li>
           <li>
