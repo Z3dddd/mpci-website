@@ -8,6 +8,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Products from './pages/Products/Products';
+import PipeSupports from './pages/Products/PipeSupports/PipeSupports';
 import Certifications from './pages/Certifications/Certifications';
 import CertificationDetail from './pages/Certifications/CertificationDetail';
 import Catalogue from './pages/Catalogue/Catalogue';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/pipe-supports" element={<PipeSupports />} />
             <Route path="/certifications" element={<Certifications />} />
             <Route path="/certifications/:id" element={<CertificationDetail />} />
             <Route path="/catalogue" element={<Catalogue />} />
