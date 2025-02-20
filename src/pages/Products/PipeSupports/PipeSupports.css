@@ -39,29 +39,122 @@
 }
 
 .pipe-support-card {
-  position: relative;
-  background-color: white;
-  border-radius: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  height: 300px;
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+  min-height: 400px;
 }
 
 .pipe-support-card:hover {
   transform: translateY(-5px);
 }
 
-.pipe-support-image {
+.card-inner {
+  position: relative;
+  width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.pipe-support-content {
-  padding: 1.5rem;
+.pipe-support-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.pipe-support-card.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 1000;
+  width: 90%;
+  max-width: 800px;
+  height: 80vh;
+  margin: 0;
+}
+
+.pipe-support-card.zoomed .pipe-support-image {
+  height: 100%;
+  background-size: contain;
+}
+
+.pipe-support-card.zoomed .card-front,
+.pipe-support-card.zoomed .card-back {
+  height: 100%;
+}
+
+.pipe-support-card.zoomed .card-back {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.pipe-support-card.zoomed .pipe-support-content {
+  height: auto;
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+}
+
+/* Add specific styling for the back content */
+.pipe-support-card.zoomed .card-back .pipe-support-content {
+  top: 0;
+  bottom: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+  padding-top: 50px;
+  overflow-y: auto;
+}
+
+.card-back .pipe-support-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.pipe-support-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.pipe-support-features li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.pipe-support-features li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
 }
 
 .pipe-support-content h2 {
@@ -82,24 +175,94 @@
   margin-bottom: 1rem;
 }
 
-.pipe-support-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.pipe-support-features li {
-  color: #6E7476;
-  margin-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.pipe-support-features li::before {
-  content: "•";
-  color: #565859;
-  position: absolute;
+.overlay {
+  position: fixed;
+  top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.close-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(86, 88, 89, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+.flip-arrow:hover {
+  background: rgba(86, 88, 89, 0.2);
+}
+
+.flip-arrow span {
+  font-size: 28px;
+  color: #565859;
+  line-height: 1;
+}
+
+.flip-arrow.right {
+  right: 20px;
+  left: auto;
+}
+
+.flip-arrow.left {
+  left: 20px;
+  right: auto;
+}
+
+/* Adjust the arrow on the back to appear on the correct side */
+.card-back .flip-arrow.left {
+  transform: translateY(-50%) rotateY(180deg);
+  right: 20px;
+  left: auto;
+}
+
+.card-front .flip-arrow,
+.card-back .flip-arrow {
+  background: rgba(86, 88, 89, 0.1);
+}
+
+.pipe-support-image {
+  height: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+.pipe-support-content {
+  padding: 20px;
+  padding-top: 10px;
 }
 
 .pipe-support-content.simple {
@@ -117,6 +280,31 @@
   font-size: 1rem;
   color: #333;
   font-weight: 500;
+}
+
+.construction-feature {
+  color: #000000;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.specifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  text-align: left;
+}
+
+.specifications-list li {
+  color: #000000;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.specifications-list li strong {
+  color: #565859;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 1200px) {
