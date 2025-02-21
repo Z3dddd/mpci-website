@@ -12,7 +12,7 @@ function Products() {
 
       <div className="products-container">
         <div className="products-grid">
-          <Link to="/products/pipe-supports" className="product-card">
+          <Link to="/mpci-website/products/pipe-supports" className="product-card">
             <div className="product-image pipe-supports"></div>
             <h2>Pipe Supports</h2>
             <p>Pipe support solutions for secure installations</p>
@@ -23,7 +23,7 @@ function Products() {
             </ul>
           </Link>
 
-          <Link to="/products/modular-systems" className="product-card">
+          <Link to="/mpci-website/products/modular-systems" className="product-card">
             <div className="product-image modular-systems"></div>
             <h2>Modular Systems</h2>
             <p>Modular support systems for complex installations</p>
@@ -34,7 +34,7 @@ function Products() {
             </ul>
           </Link>
 
-          <Link to="/products/rail-supports" className="product-card">
+          <Link to="/mpci-website/products/rail-supports" className="product-card">
             <div className="product-image rail-supports"></div>
             <h2>Rail Supports</h2>
             <p>Rail support systems for industrial applications</p>

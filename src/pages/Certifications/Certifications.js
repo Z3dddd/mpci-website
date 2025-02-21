@@ -12,7 +12,7 @@ function Certifications() {
 
       <div className="certifications-container">
         <div className="certifications-grid">
-          <Link to="/certifications/iso-9001" className="certification-card">
+          <Link to="/mpci-website/certifications/iso-9001" className="certification-card">
             <div className="certification-image"></div>
             <h2>ISO 9001:2015</h2>
             <p>Quality Management System</p>
@@ -22,7 +22,7 @@ function Certifications() {
             </div>
           </Link>
 
-          <Link to="/certifications/iso-14001" className="certification-card">
+          <Link to="/mpci-website/certifications/iso-14001" className="certification-card">
             <div className="certification-image"></div>
             <h2>ISO 14001:2015</h2>
             <p>Environmental Management</p>
@@ -32,7 +32,7 @@ function Certifications() {
             </div>
           </Link>
 
-          <Link to="/certifications/ohsas-18001" className="certification-card">
+          <Link to="/mpci-website/certifications/ohsas-18001" className="certification-card">
             <div className="certification-image"></div>
             <h2>OHSAS 18001</h2>
             <p>Occupational Health & Safety</p>
@@ -42,7 +42,7 @@ function Certifications() {
             </div>
           </Link>
 
-          <Link to="/certifications/leed" className="certification-card">
+          <Link to="/mpci-website/certifications/leed" className="certification-card">
             <div className="certification-image"></div>
             <h2>LEED Certification</h2>
             <p>Green Building Standards</p>

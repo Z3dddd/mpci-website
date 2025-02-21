@@ -44,7 +44,7 @@ function Catalogue() {
 
   const handleDownload = async (fileName, title) => {
     try {
-      const response = await fetch(`/catalogues/${fileName}`);
+      const response = await fetch(`/mpci-website/catalogues/${fileName}`);
       
       if (!response.ok) {
         throw new Error('File not found');

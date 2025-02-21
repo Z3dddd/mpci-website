@@ -65,7 +65,7 @@ function TeamMember() {
     return (
       <div className="team-member-not-found">
         <h1>Team Member Not Found</h1>
-        <Link to="/about" className="back-button">Back to About</Link>
+        <Link to="/mpci-website/about" className="back-button">Back to About</Link>
       </div>
     );
   }
@@ -78,7 +78,7 @@ function TeamMember() {
       </div>
 
       <div className="team-member-content">
-        <Link to="/about" className="back-button">← Back to About</Link>
+        <Link to="/mpci-website/about" className="back-button">← Back to About</Link>
         
         <div className="team-member-grid">
           <div className="team-member-info">

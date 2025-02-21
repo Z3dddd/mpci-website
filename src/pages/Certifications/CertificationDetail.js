@@ -71,7 +71,7 @@ function CertificationDetail() {
       <div className="certification-detail">
         <div className="certification-not-found">
           <h1>Certification Not Found</h1>
-          <Link to="/certifications" className="back-button">Back to Certifications</Link>
+          <Link to="/mpci-website/certifications" className="back-button">Back to Certifications</Link>
         </div>
       </div>
     );
@@ -85,7 +85,7 @@ function CertificationDetail() {
       </div>
 
       <div className="certification-detail-content">
-        <Link to="/certifications" className="back-button">← Back to Certifications</Link>
+        <Link to="/mpci-website/certifications" className="back-button">← Back to Certifications</Link>
         
         <div className="certification-detail-card">
           <div className="certification-detail-image"></div>

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mpci-website/static/css/main.6a763c73.css",
+    "main.js": "/mpci-website/static/js/main.c85f479f.js",
+    "static/js/488.8dc36cc3.chunk.js": "/mpci-website/static/js/488.8dc36cc3.chunk.js",
+    "static/media/adjustable-pipe-saddle-with-U-Bolt.webp": "/mpci-website/static/media/adjustable-pipe-saddle-with-U-Bolt.b7d22480239d53c86f9c.webp",
+    "index.html": "/mpci-website/index.html",
+    "main.6a763c73.css.map": "/mpci-website/static/css/main.6a763c73.css.map",
+    "main.c85f479f.js.map": "/mpci-website/static/js/main.c85f479f.js.map",
+    "488.8dc36cc3.chunk.js.map": "/mpci-website/static/js/488.8dc36cc3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a763c73.css",
+    "static/js/main.c85f479f.js"
+  ]
+}

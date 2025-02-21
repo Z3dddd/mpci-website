@@ -25,15 +25,15 @@ function App() {
         <Navbar />
         <div className="content-wrapper">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/products/pipe-supports" element={<PipeSupports />} />
-            <Route path="/certifications" element={<Certifications />} />
-            <Route path="/certifications/:id" element={<CertificationDetail />} />
-            <Route path="/catalogue" element={<Catalogue />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/team/:id" element={<TeamMember />} />
+            <Route path="/mpci-website" element={<Home />} />
+            <Route path="/mpci-website/about" element={<About />} />
+            <Route path="/mpci-website/products" element={<Products />} />
+            <Route path="/mpci-website/products/pipe-supports" element={<PipeSupports />} />
+            <Route path="/mpci-website/certifications" element={<Certifications />} />
+            <Route path="/mpci-website/certifications/:id" element={<CertificationDetail />} />
+            <Route path="/mpci-website/catalogue" element={<Catalogue />} />
+            <Route path="/mpci-website/contact" element={<Contact />} />
+            <Route path="/mpci-website/team/:id" element={<TeamMember />} />
           </Routes>
         </div>
         <Footer />

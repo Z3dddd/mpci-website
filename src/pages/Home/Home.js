@@ -9,7 +9,7 @@ function Home() {
         <div className="hero-content">
           <h1>Leading the Future of Modular Systems</h1>
           <p>Pioneering Innovation in Modular and Prefabricated Construction Systems</p>
-          <Link to="/products" className="cta-button">Discover Our Solutions</Link>
+          <Link to="/mpci-website/products" className="cta-button">Discover Our Solutions</Link>
         </div>
       </section>
 

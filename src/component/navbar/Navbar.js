@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/mpci-website" className="navbar-logo">
           <div className="logo-wrapper">
             <span className="company-name">MPCI</span>
             <div className="tagline-wrapper">
@@ -37,32 +37,32 @@ function Navbar() {
 
         <ul className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <li>
-            <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+            <Link to="/mpci-website" className={location.pathname === '/mpci-website' ? 'active' : ''}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>
+            <Link to="/mpci-website/about" className={location.pathname === '/mpci-website/about' ? 'active' : ''}>
               About
             </Link>
           </li>
           <li>
-            <Link to="/products" className={location.pathname === '/products' ? 'active' : ''}>
+            <Link to="/mpci-website/products" className={location.pathname === '/mpci-website/products' ? 'active' : ''}>
               Products
             </Link>
           </li>
           <li>
-            <Link to="/certifications" className={location.pathname === '/certifications' ? 'active' : ''}>
+            <Link to="/mpci-website/certifications" className={location.pathname === '/mpci-website/certifications' ? 'active' : ''}>
               Certifications
             </Link>
           </li>
           <li>
-            <Link to="/catalogue" className={location.pathname === '/catalogue' ? 'active' : ''}>
+            <Link to="/mpci-website/catalogue" className={location.pathname === '/mpci-website/catalogue' ? 'active' : ''}>
               Catalogue
             </Link>
           </li>
           <li>
-            <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
+            <Link to="/mpci-website/contact" className={location.pathname === '/mpci-website/contact' ? 'active' : ''}>
               Contact
             </Link>
           </li>
