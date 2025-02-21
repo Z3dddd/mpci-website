@@ -36,13 +36,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 12″",
         material: "Carbon steel",
-        finish: "Black, Galvanized, or coated to the customer's specifications"
+        finish: "Black, Galvanized, or coated to the customer's specifications",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 2,
-      name: "Heavy-Duty Pipe Clamp Assembly",
+      name: "Adjustable Roller Hanger",
       constructionFeatures: [
         "Designed for maximum load-bearing capacity in industrial applications",
         "Features dual-bolt clamping mechanism for enhanced stability"
@@ -50,13 +51,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1″ to 24″",
         material: "Stainless steel",
-        finish: "Zinc-plated or custom coating available"
+        finish: "Zinc-plated or custom coating available",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 3,
-      name: "Sliding Pipe Support System",
+      name: "Adjustable Roller Stand",
       constructionFeatures: [
         "Enables thermal expansion and contraction movement",
         "Low-friction PTFE coating for smooth operation"
@@ -64,13 +66,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "3″ to 16″",
         material: "Carbon steel with PTFE coating",
-        finish: "Industrial-grade powder coating"
+        finish: "Industrial-grade powder coating",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 4,
-      name: "Variable Height Pipe Stand",
+      name: "Beam Clamp",
       constructionFeatures: [
         "Quick-adjust height mechanism for flexible installation",
         "Stable base design for uneven surfaces"
@@ -78,13 +81,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 14″",
         material: "High-strength aluminum",
-        finish: "Anodized coating"
+        finish: "Anodized coating",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 5,
-      name: "Insulated Pipe Support Block",
+      name: "Insulation Protection Shield",
       constructionFeatures: [
         "Thermal isolation properties prevent heat transfer",
         "High-density foam core with protective shell"
@@ -92,13 +96,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1″ to 10″",
         material: "Composite materials",
-        finish: "UV-resistant coating"
+        finish: "UV-resistant coating",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 6,
-      name: "Spring Loaded Pipe Hanger",
+      name: "J Hanger",
       constructionFeatures: [
         "Constant support during thermal movement",
         "Adjustable spring tension for various loads"
@@ -106,13 +111,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 20″",
         material: "Spring steel",
-        finish: "Zinc-chromate plating"
+        finish: "Zinc-chromate plating",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 7,
-      name: "Rigid Pipe Support Bracket",
+      name: "Pipe Roller",
       constructionFeatures: [
         "Heavy-duty welded construction",
         "Multiple mounting options for versatile installation"
@@ -120,13 +126,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "4″ to 18″",
         material: "Structural steel",
-        finish: "Hot-dip galvanized"
+        finish: "Hot-dip galvanized",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 8,
-      name: "Cushioned Pipe Clamp",
+      name: "Roller Stand",
       constructionFeatures: [
         "Elastomer lining reduces vibration transmission",
         "Split design for easy installation"
@@ -134,13 +141,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1/2″ to 8″",
         material: "Steel with rubber lining",
-        finish: "Powder coated"
+        finish: "Powder coated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 9,
-      name: "Pipe Roller Support",
+      name: "Rubber Lined Clevis Hanger",
       constructionFeatures: [
         "Sealed bearing design for maintenance-free operation",
         "Adjustable height roller assembly"
@@ -148,13 +156,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "3″ to 24″",
         material: "Carbon steel",
-        finish: "Industrial enamel coating"
+        finish: "Industrial enamel coating",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 10,
-      name: "Wall-Mounted Pipe Support",
+      name: "Rubber Lined Riser Clamp",
       constructionFeatures: [
         "Space-saving design for wall installation",
         "Reinforced mounting points for secure attachment"
@@ -162,13 +171,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1″ to 12″",
         material: "Steel alloy",
-        finish: "Epoxy coating"
+        finish: "Epoxy coating",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 11,
-      name: "Adjustable Pipe Stanchion",
+      name: "Rubber Lined Split Clamp",
       constructionFeatures: [
         "Vertical height adjustment capability",
         "Wide base for improved stability"
@@ -176,13 +186,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 16″",
         material: "Carbon steel",
-        finish: "Zinc-rich primer"
+        finish: "Zinc-rich primer",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 12,
-      name: "Double-Bolt Pipe Clamp",
+      name: "Rubber Lined Swivel Clamp",
       constructionFeatures: [
         "Enhanced gripping force with dual bolt design",
         "Compatible with standard strut channels"
@@ -190,13 +201,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1/2″ to 10″",
         material: "Malleable iron",
-        finish: "Electro-galvanized"
+        finish: "Electro-galvanized",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 13,
-      name: "Pipe Support Saddle Block",
+      name: "Rubber Lined U-Bolt",
       constructionFeatures: [
         "Pre-formed cradle design",
         "High load-bearing capacity"
@@ -204,13 +216,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "4″ to 20″",
         material: "Reinforced concrete",
-        finish: "Sealed surface"
+        finish: "Sealed surface",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 14,
-      name: "Adjustable Pipe Rest",
+      name: "Rubber Lined U Strap Clamp",
       constructionFeatures: [
         "Quick-release height adjustment mechanism",
         "Non-marking support surface"
@@ -218,13 +231,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1″ to 8″",
         material: "Aluminum alloy",
-        finish: "Clear anodized"
+        finish: "Clear anodized",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 15,
-      name: "Heavy-Duty Pipe Shoe",
+      name: "Rubber Support Insert",
       constructionFeatures: [
         "Designed for high-temperature applications",
         "Welded construction for maximum durability"
@@ -232,13 +246,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "6″ to 24″",
         material: "Carbon steel",
-        finish: "High-temp paint coating"
+        finish: "High-temp paint coating",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 16,
-      name: "Pipe Guide Assembly",
+      name: "Spiral Duct Clamp",
       constructionFeatures: [
         "Directional control for pipe movement",
         "Adjustable clearance settings"
@@ -246,13 +261,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 14″",
         material: "Stainless steel",
-        finish: "Passivated"
+        finish: "Passivated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 17,
-      name: "Compact Pipe Support Bracket",
+      name: "Standard Clevis Hanger",
       constructionFeatures: [
         "Space-efficient design for tight installations",
         "Multiple mounting configurations"
@@ -260,13 +276,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1/2″ to 6″",
         material: "Steel",
-        finish: "Zinc plated"
+        finish: "Zinc plated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 18,
-      name: "Pipe Alignment Guide",
+      name: "Standard Riser Clamp",
       constructionFeatures: [
         "Maintains pipe alignment during thermal expansion",
         "Self-lubricating liner material"
@@ -274,13 +291,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "3″ to 18″",
         material: "Carbon steel with PTFE liner",
-        finish: "Epoxy coated"
+        finish: "Epoxy coated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 19,
-      name: "Universal Pipe Mount",
+      name: "Standard Split Clamp",
       constructionFeatures: [
         "Adaptable to multiple pipe sizes",
         "Quick-connect mounting system"
@@ -288,13 +306,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1″ to 12″",
         material: "Galvanized steel",
-        finish: "Powder coated"
+        finish: "Powder coated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 20,
-      name: "Vertical Pipe Support Tower",
+      name: "Standard Swivel Clamp",
       constructionFeatures: [
         "Multi-level pipe support capability",
         "Adjustable support arms"
@@ -302,13 +321,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 16″",
         material: "Structural steel",
-        finish: "Hot-dip galvanized"
+        finish: "Hot-dip galvanized",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 21,
-      name: "Pipe Support Channel",
+      name: "Standard U Bolt",
       constructionFeatures: [
         "Continuous support for multiple pipes",
         "Integrated drainage system"
@@ -316,13 +336,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1″ to 8″",
         material: "Aluminum",
-        finish: "Mill finish"
+        finish: "Mill finish",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 22,
-      name: "Adjustable Pipe Cradle",
+      name: "Standard U Strap Clamp",
       constructionFeatures: [
         "Curved support surface for pipe protection",
         "Variable height adjustment"
@@ -330,13 +351,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "4″ to 20″",
         material: "Carbon steel",
-        finish: "Industrial enamel"
+        finish: "Industrial enamel",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 23,
-      name: "Pipe Support Base Plate",
+      name: "Steel Turnbuckle",
       constructionFeatures: [
         "Wide footprint for load distribution",
         "Pre-drilled mounting holes"
@@ -344,13 +366,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 24″",
         material: "Steel plate",
-        finish: "Primer coated"
+        finish: "Primer coated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 24,
-      name: "Adjustable Pipe Bracket",
+      name: "Strut Beam Clamp",
       constructionFeatures: [
         "Multi-angle adjustment capability",
         "Reinforced mounting points"
@@ -358,13 +381,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1″ to 10″",
         material: "Steel",
-        finish: "Zinc-plated"
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 25,
-      name: "Pipe Support Pedestal",
+      name: "Three Bolt Pipe Clamp",
       constructionFeatures: [
         "Elevated pipe support design",
         "Adjustable height columns"
@@ -372,13 +396,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "3″ to 16″",
         material: "Carbon steel",
-        finish: "Epoxy coated"
+        finish: "Epoxy coated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 26,
-      name: "Pipe Anchor Assembly",
+      name: "Two Bolt Clamp",
       constructionFeatures: [
         "Fixed point pipe restraint",
         "High-strength fastening system"
@@ -386,13 +411,14 @@ function PipeSupports() {
       specifications: {
         sizeRange: "2″ to 14″",
         material: "Steel alloy",
-        finish: "Hot-dip galvanized"
+        finish: "Hot-dip galvanized",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     },
     {
       id: 27,
-      name: "Pipe Support Beam Clamp",
+      name: "Yoke Clamp",
       constructionFeatures: [
         "Universal beam flange attachment",
         "Quick installation design"
@@ -400,7 +426,8 @@ function PipeSupports() {
       specifications: {
         sizeRange: "1/2″ to 8″",
         material: "Forged steel",
-        finish: "Zinc plated"
+        finish: "Zinc plated",
+        manufacturer: "NTEICO"
       },
       image: adjustablePipeSaddle
     }
@@ -446,6 +473,7 @@ function PipeSupports() {
                       <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
                       <li><strong>Material:</strong> {product.specifications.material}</li>
                       <li><strong>Finish:</strong> {product.specifications.finish}</li>
+                      <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
                     </ul>
                   </div>
                 </div>

@@ -158,9 +158,13 @@
 }
 
 .pipe-support-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #565859;
   margin-bottom: 1rem;
+}
+
+.pipe-support-card.zoomed .pipe-support-content h2 {
+  font-size: 1.5rem;
 }
 
 .pipe-support-content p {
