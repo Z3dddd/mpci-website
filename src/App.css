@@ -256,25 +256,18 @@ a:hover {
 }
 
 /* Hero Section Text */
-.hero h1, .hero-content h1,
-.products-hero h1,
-.certifications-hero h1,
-.blog-hero h1,
-.contact-hero h1 {
-  color: white;
-  font-size: 3rem;
+.hero h1, .hero-content h1 {
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
+  color: white;
 }
 
-.hero p, .hero-content p,
-.products-hero p,
-.certifications-hero p,
-.blog-hero p,
-.contact-hero p {
-  color: white;
-  font-size: 1.2rem;
+.hero p, .hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   opacity: 0.9;
+  color: white;
 }
 
 /* Card Typography */
@@ -375,4 +368,37 @@ a {
 
 .content-wrapper {
   flex: 1 0 auto;
+}
+
+/* Common Hero Section Style */
+.products-hero,
+.certifications-hero,
+.blog-hero,
+.contact-hero,
+.about-hero,
+.team-member-hero,
+.pipe-supports-hero,
+.certification-detail-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #565859 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .products-hero,
+  .certifications-hero,
+  .blog-hero,
+  .contact-hero,
+  .about-hero,
+  .team-member-hero,
+  .pipe-supports-hero,
+  .certification-detail-hero {
+    padding: 3rem 1.5rem;
+  }
 }

@@ -36,18 +36,58 @@ function Home() {
         <div className="projects-grid">
           <div className="project-card">
             <div className="project-image"></div>
-            <h3>Commercial Complex</h3>
-            <p>Modern modular office space solution</p>
+            <h3>Sobha Creek Vista</h3>
+            <p>Luxury residential development</p>
           </div>
           <div className="project-card">
             <div className="project-image"></div>
-            <h3>Industrial Facility</h3>
-            <p>Large-scale manufacturing unit</p>
+            <h3>Binghatti Heights</h3>
+            <p>Modern residential tower</p>
           </div>
           <div className="project-card">
             <div className="project-image"></div>
-            <h3>Residential Development</h3>
-            <p>Multi-story modular housing project</p>
+            <h3>AZIZI RIVIERA</h3>
+            <p>Waterfront development project</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>Justice Palace Renovation</h3>
+            <p>Historical building renovation</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>Saudi Railway Passenger Stations</h3>
+            <p>Transportation infrastructure</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>King Khalid International Airport</h3>
+            <p>Aviation facility development</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>King Saud University</h3>
+            <p>Educational institution development</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>King Khalid University</h3>
+            <p>Academic campus project</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>KAP-4</h3>
+            <p>Infrastructure development</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>King Fahad Medical City</h3>
+            <p>Healthcare facility complex</p>
+          </div>
+          <div className="project-card">
+            <div className="project-image"></div>
+            <h3>Jeddah Cargo</h3>
+            <p>Logistics facility development</p>
           </div>
         </div>
       </section>

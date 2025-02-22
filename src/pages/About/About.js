@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageHero from '../../components/PageHero/PageHero';
 import './About.css';
 
 function About() {
   return (
     <div className="about">
-      <section className="about-hero">
-        <h1>About Our Company</h1>
-        <p>Leading the revolution in modular and pre-fabricated steel construction</p>
-      </section>
+      <PageHero 
+        title="About Our Company"
+        description="Leading the revolution in modular and pre-fabricated steel construction"
+      />
 
       <section className="company-info">
         <div className="info-content">

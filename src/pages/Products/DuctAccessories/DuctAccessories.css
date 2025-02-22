@@ -1,0 +1,186 @@
+.duct-accessories-page {
+  padding-top: 80px;
+}
+
+.duct-accessories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.duct-accessories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.duct-accessory-card {
+  position: relative;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  perspective: 1000px;
+  transition: transform 0.5s;
+}
+
+.duct-accessory-card.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 1000;
+  width: 90%;
+  max-width: 600px;
+  height: 80vh;
+  max-height: 800px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.duct-accessory-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.duct-accessory-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.duct-accessory-content {
+  padding: 1rem;
+}
+
+.duct-accessory-content h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.duct-accessory-content h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.construction-feature {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.specifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.specifications-list li {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.specifications-list strong {
+  color: #444;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.close-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+  display: inline-block;
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-button:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .duct-accessories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .duct-accessory-card.zoomed {
+    width: 95%;
+    height: 90vh;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .duct-accessories-container {
+    padding: 1rem;
+  }
+
+  .duct-accessories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .duct-accessory-card.zoomed {
+    width: 100%;
+    height: 95vh;
+    transform: translate(-50%, -50%) scale(1);
+  }
+} 

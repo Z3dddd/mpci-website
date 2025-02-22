@@ -1,0 +1,21 @@
+.page-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #565859 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+} 

@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageHero from '../../components/PageHero/PageHero';
 import './Certifications.css';
 
 function Certifications() {
   return (
     <div className="certifications">
-      <section className="certifications-hero">
-        <h1>Our Certifications</h1>
-        <p>Industry-leading standards and quality assurance</p>
-      </section>
+      <PageHero 
+        title="Our Certifications"
+        description="Industry standards and quality assurance certifications"
+      />
 
       <div className="certifications-container">
         <div className="certifications-grid">

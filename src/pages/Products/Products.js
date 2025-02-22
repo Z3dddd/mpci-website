@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageHero from '../../components/PageHero/PageHero';
 import './Products.css';
 
 function Products() {
   return (
     <div className="products">
-      <section className="products-hero">
-        <h1>Our Products</h1>
-        <p>Comprehensive support and mounting solutions for industrial applications</p>
-      </section>
+      <PageHero 
+        title="Our Products"
+        description="Comprehensive support and mounting solutions for industrial applications"
+      />
 
       <div className="products-container">
         <div className="products-grid">
@@ -45,7 +46,7 @@ function Products() {
             </ul>
           </Link>
 
-          <Link to="/products/anchoring-systems" className="product-card">
+          <Link to="/mpci-website/products/anchoring-systems" className="product-card">
             <div className="product-image anchoring-systems"></div>
             <h2>Anchoring Systems</h2>
             <p>Anchoring solutions for maximum stability</p>
@@ -56,7 +57,7 @@ function Products() {
             </ul>
           </Link>
 
-          <Link to="/products/seismic-isolators" className="product-card">
+          <Link to="/mpci-website/products/seismic-isolators" className="product-card">
             <div className="product-image seismic-isolators"></div>
             <h2>Seismic & Vibration Isolators</h2>
             <p>Isolation systems for seismic & vibration protection</p>
@@ -67,7 +68,7 @@ function Products() {
             </ul>
           </Link>
 
-          <Link to="/products/duct-accessories" className="product-card">
+          <Link to="/mpci-website/products/duct-accessories" className="product-card">
             <div className="product-image duct-accessories"></div>
             <h2>Duct Accessories</h2>
             <p>Comprehensive range of duct mounting accessories</p>

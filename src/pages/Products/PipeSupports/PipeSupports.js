@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PageHero from '../../../components/PageHero/PageHero';
 import './PipeSupports.css';
 import adjustablePipeSaddle from '../../../assets/pipesupports/adjustable-pipe-saddle-with-U-Bolt.webp';
 
@@ -438,10 +439,10 @@ function PipeSupports() {
       <Link to="/mpci-website/products" className="back-button">
         ← Back to Products
       </Link>
-      <section className="pipe-supports-hero">
-        <h1>Pipe Support Solutions</h1>
-        <p>Comprehensive range of pipe support products for industrial applications</p>
-      </section>
+      <PageHero 
+        title="Pipe Support Solutions"
+        description="Comprehensive range of pipe support products for industrial applications"
+      />
 
       <div className="pipe-supports-container">
         <div className="pipe-supports-grid">

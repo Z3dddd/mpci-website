@@ -1,14 +1,18 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './component/navbar/Navbar';
-import Footer from './component/Footer/Footer';
-import ScrollToTop from './component/scrollToTop/ScrollToTop';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Products from './pages/Products/Products';
 import PipeSupports from './pages/Products/PipeSupports/PipeSupports';
+import RailSupports from './pages/Products/RailSupports/RailSupports';
+import AnchoringSystems from './pages/Products/AnchoringSystems/AnchoringSystems';
+import SeismicIsolators from './pages/Products/SeismicIsolators/SeismicIsolators';
+import DuctAccessories from './pages/Products/DuctAccessories/DuctAccessories';
 import Certifications from './pages/Certifications/Certifications';
 import CertificationDetail from './pages/Certifications/CertificationDetail';
 import Catalogue from './pages/Catalogue/Catalogue';
@@ -29,6 +33,10 @@ function App() {
             <Route path="/mpci-website/about" element={<About />} />
             <Route path="/mpci-website/products" element={<Products />} />
             <Route path="/mpci-website/products/pipe-supports" element={<PipeSupports />} />
+            <Route path="/mpci-website/products/rail-supports" element={<RailSupports />} />
+            <Route path="/mpci-website/products/anchoring-systems" element={<AnchoringSystems />} />
+            <Route path="/mpci-website/products/seismic-isolators" element={<SeismicIsolators />} />
+            <Route path="/mpci-website/products/duct-accessories" element={<DuctAccessories />} />
             <Route path="/mpci-website/certifications" element={<Certifications />} />
             <Route path="/mpci-website/certifications/:id" element={<CertificationDetail />} />
             <Route path="/mpci-website/catalogue" element={<Catalogue />} />

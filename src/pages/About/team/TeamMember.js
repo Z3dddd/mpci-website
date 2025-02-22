@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import PageHero from '../../../components/PageHero/PageHero';
 import './TeamMember.css';
 
 function TeamMember() {
@@ -59,23 +60,28 @@ function TeamMember() {
     }
   };
 
-  const member = teamMembers[id];
+  const member = teamMembers[id] || {};
 
-  if (!member) {
+  if (!member.name) {
     return (
-      <div className="team-member-not-found">
-        <h1>Team Member Not Found</h1>
-        <Link to="/mpci-website/about" className="back-button">Back to About</Link>
+      <div className="team-member-page">
+        <PageHero 
+          title="Team Member Not Found"
+          description="The requested team member profile could not be found"
+        />
+        <div className="team-member-content">
+          <Link to="/mpci-website/about" className="back-button">← Back to About</Link>
+        </div>
       </div>
     );
   }
 
   return (
     <div className="team-member-page">
-      <div className="team-member-hero">
-        <h1>{member.name}</h1>
-        <p>{member.role}</p>
-      </div>
+      <PageHero 
+        title={member.name}
+        description={member.role}
+      />
 
       <div className="team-member-content">
         <Link to="/mpci-website/about" className="back-button">← Back to About</Link>

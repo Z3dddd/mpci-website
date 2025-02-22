@@ -2,31 +2,6 @@
   padding-top: 80px;
 }
 
-.certifications-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 0 2rem;
-}
-
-.certifications-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-.certifications-hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  opacity: 0.9;
-}
-
 .certifications-container {
   max-width: 1200px;
   margin: 4rem auto;
@@ -93,10 +68,6 @@
 }
 
 @media (max-width: 768px) {
-  .certifications-hero h1 {
-    font-size: 2.5rem;
-  }
-
   .certifications-grid {
     grid-template-columns: 1fr;
   }

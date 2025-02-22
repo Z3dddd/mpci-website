@@ -1,5 +1,6 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import PageHero from '../../components/PageHero/PageHero';
 import './Contact.css';
 
 function Contact() {
@@ -16,10 +17,10 @@ function Contact() {
 
   return (
     <div className="contact">
-      <section className="contact-hero">
-        <h1>Contact Us</h1>
-        <p>Get in touch with our team for your next project</p>
-      </section>
+      <PageHero 
+        title="Contact Us"
+        description="Get in touch with our team for inquiries and support"
+      />
 
       <div className="contact-container">
         <section className="contact-info">

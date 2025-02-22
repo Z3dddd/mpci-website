@@ -2,30 +2,6 @@
   padding-top: 80px;
 }
 
-.products-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 0 2rem;
-  text-align: center;
-}
-
-.products-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.products-hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  opacity: 0.9;
-}
-
 .products-container {
   max-width: 1200px;
   margin: 4rem auto;
@@ -134,10 +110,6 @@
 }
 
 @media (max-width: 768px) {
-  .products-hero h1 {
-    font-size: 2.5rem;
-  }
-
   .products-grid {
     grid-template-columns: 1fr;
   }

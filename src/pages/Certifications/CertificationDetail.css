@@ -2,30 +2,6 @@
   padding-top: 80px;
 }
 
-.certification-detail-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 0 2rem;
-}
-
-.certification-detail-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.certification-detail-hero p {
-  font-size: 1.5rem;
-  opacity: 0.9;
-  color: #9A9C9D;
-}
-
 .certification-detail-content {
   max-width: 1000px;
   margin: 2rem auto;

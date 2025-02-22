@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import PageHero from '../../components/PageHero/PageHero';
 import './CertificationDetail.css';
 
 function CertificationDetail() {
@@ -64,14 +65,17 @@ function CertificationDetail() {
     }
   };
 
-  const certification = certifications[id];
+  const certification = certifications[id] || {};
 
-  if (!certification) {
+  if (!certification.title) {
     return (
       <div className="certification-detail">
-        <div className="certification-not-found">
-          <h1>Certification Not Found</h1>
-          <Link to="/mpci-website/certifications" className="back-button">Back to Certifications</Link>
+        <PageHero 
+          title="Certification Not Found"
+          description="The requested certification could not be found"
+        />
+        <div className="certification-detail-content">
+          <Link to="/mpci-website/certifications" className="back-button">← Back to Certifications</Link>
         </div>
       </div>
     );
@@ -79,10 +83,10 @@ function CertificationDetail() {
 
   return (
     <div className="certification-detail">
-      <div className="certification-detail-hero">
-        <h1>{certification.title}</h1>
-        <p>{certification.type}</p>
-      </div>
+      <PageHero 
+        title={certification.title}
+        description={certification.shortDescription}
+      />
 
       <div className="certification-detail-content">
         <Link to="/mpci-website/certifications" className="back-button">← Back to Certifications</Link>
