@@ -27,14 +27,46 @@ function DuctAccessories() {
   const ductAccessories = [
     {
       id: 1,
-      name: "Duct Support Bracket",
+      name: "Aluminium Foil Tape",
       constructionFeatures: [
-        "Heavy-duty steel construction",
-        "Adjustable height mechanism",
-        "Pre-drilled mounting holes"
+        "High tensile strength",
+        "Excellent adhesion",
+        "Moisture and vapor resistant"
       ],
       specifications: {
-        sizeRange: "100mm to 1000mm",
+        sizeRange: "48mm to 72mm width",
+        material: "Pure aluminum foil with acrylic adhesive",
+        finish: "Bright aluminum",
+        manufacturer: "NTEICO"
+      },
+      image: ductAccessoryImage
+    },
+    {
+      id: 2,
+      name: "Aluminium FSK Tape",
+      constructionFeatures: [
+        "Foil-Scrim-Kraft backing",
+        "High performance adhesive",
+        "Excellent vapor barrier"
+      ],
+      specifications: {
+        sizeRange: "48mm to 96mm width",
+        material: "Aluminum foil with fiber reinforcement",
+        finish: "FSK laminated",
+        manufacturer: "NTEICO"
+      },
+      image: ductAccessoryImage
+    },
+    {
+      id: 3,
+      name: "Bolt Slide on Flange System",
+      constructionFeatures: [
+        "Easy assembly design",
+        "High strength corners",
+        "Airtight sealing"
+      ],
+      specifications: {
+        sizeRange: "20mm to 40mm profile",
         material: "Galvanized steel",
         finish: "Zinc coated",
         manufacturer: "NTEICO"
@@ -42,64 +74,32 @@ function DuctAccessories() {
       image: ductAccessoryImage
     },
     {
-      id: 2,
-      name: "Duct Hanging System",
-      constructionFeatures: [
-        "Threaded rod compatibility",
-        "Quick-lock mechanism",
-        "Load distribution design"
-      ],
-      specifications: {
-        sizeRange: "200mm to 1500mm",
-        material: "Carbon steel",
-        finish: "Powder coated",
-        manufacturer: "NTEICO"
-      },
-      image: ductAccessoryImage
-    },
-    {
-      id: 3,
-      name: "Duct Sealing Tape",
-      constructionFeatures: [
-        "High adhesion strength",
-        "Weather-resistant properties",
-        "Easy application"
-      ],
-      specifications: {
-        sizeRange: "48mm to 96mm width",
-        material: "Aluminum foil with acrylic adhesive",
-        finish: "Metallic silver",
-        manufacturer: "NTEICO"
-      },
-      image: ductAccessoryImage
-    },
-    {
       id: 4,
-      name: "Flexible Duct Connector",
+      name: "Coat 30-36",
       constructionFeatures: [
-        "Fire-resistant fabric",
-        "Vibration isolation",
-        "Easy installation"
+        "High coverage rate",
+        "Quick drying formula",
+        "UV resistant"
       ],
       specifications: {
-        sizeRange: "100mm to 600mm",
-        material: "Neoprene-coated fiberglass",
-        finish: "Black neoprene coating",
+        sizeRange: "1-5 gallon containers",
+        material: "Water-based coating",
+        finish: "Semi-gloss white",
         manufacturer: "NTEICO"
       },
       image: ductAccessoryImage
     },
     {
       id: 5,
-      name: "Duct Access Door",
+      name: "Corner and Slide Cleats and Clamps",
       constructionFeatures: [
-        "Airtight seal design",
-        "Insulated construction",
-        "Quick-release latches"
+        "Pre-formed corners",
+        "Quick installation",
+        "Secure locking mechanism"
       ],
       specifications: {
-        sizeRange: "200mm x 200mm to 600mm x 600mm",
-        material: "Galvanized steel with insulation",
+        sizeRange: "20mm to 40mm",
+        material: "Galvanized steel",
         finish: "Mill finish",
         manufacturer: "NTEICO"
       },
@@ -107,48 +107,48 @@ function DuctAccessories() {
     },
     {
       id: 6,
-      name: "Volume Control Damper",
+      name: "Duct Sealant 3-17",
       constructionFeatures: [
-        "Opposed blade design",
-        "Manual or motorized operation",
-        "Position indicator"
+        "Indoor/outdoor application",
+        "Excellent adhesion",
+        "Mold resistant"
       ],
       specifications: {
-        sizeRange: "150mm to 800mm diameter",
-        material: "Aluminum blades with steel frame",
-        finish: "Natural aluminum",
+        sizeRange: "1-5 gallon containers",
+        material: "Water-based sealant",
+        finish: "Gray",
         manufacturer: "NTEICO"
       },
       image: ductAccessoryImage
     },
     {
       id: 7,
-      name: "Duct Joint Clamp",
+      name: "Foam Tape/Gasket",
       constructionFeatures: [
-        "Quick-connect design",
-        "Rubber gasket seal",
-        "Corrosion-resistant"
+        "Closed cell structure",
+        "Self-adhesive backing",
+        "Weather resistant"
       ],
       specifications: {
-        sizeRange: "100mm to 1200mm",
-        material: "Stainless steel with EPDM gasket",
-        finish: "Stainless steel",
+        sizeRange: "3mm to 25mm thickness",
+        material: "EPDM foam",
+        finish: "Black",
         manufacturer: "NTEICO"
       },
       image: ductAccessoryImage
     },
     {
       id: 8,
-      name: "Acoustic Duct Liner",
+      name: "Glue 81-10",
       constructionFeatures: [
-        "Sound absorption properties",
-        "Thermal insulation",
-        "Fire-resistant"
+        "Fast-setting formula",
+        "High bonding strength",
+        "Temperature resistant"
       ],
       specifications: {
-        sizeRange: "12mm to 50mm thickness",
-        material: "Fiberglass with protective coating",
-        finish: "Black protective facing",
+        sizeRange: "1-5 gallon containers",
+        material: "Industrial adhesive",
+        finish: "Clear",
         manufacturer: "NTEICO"
       },
       image: ductAccessoryImage

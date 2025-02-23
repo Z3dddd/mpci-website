@@ -27,63 +27,63 @@ function AnchoringSystems() {
   const anchoringSystems = [
     {
       id: 1,
-      name: "Heavy-Duty Expansion Anchor",
+      name: "BCR-300/400 POLY SF Chemical Anchor",
       constructionFeatures: [
-        "High-strength carbon steel construction",
-        "Pre-assembled for quick installation",
-        "Multiple size options for various applications"
+        "Polyester styrene-free formulation",
+        "Fast curing time",
+        "Suitable for medium to heavy loads"
       ],
       specifications: {
-        sizeRange: "M8 to M20",
-        material: "Carbon Steel Grade 8.8",
-        finish: "Zinc plated",
+        sizeRange: "300ml/400ml cartridge",
+        material: "Polyester resin",
+        finish: "Gray",
         manufacturer: "NTEICO"
       },
       image: anchoringSystemImage
     },
     {
       id: 2,
-      name: "Chemical Anchor System",
+      name: "BCR-300/400/165 VINIL Chemical Anchor",
       constructionFeatures: [
-        "Two-component epoxy-based formula",
-        "High load capacity for heavy-duty applications",
-        "Suitable for cracked and non-cracked concrete"
+        "Vinylester-based formula",
+        "High chemical resistance",
+        "Excellent for wet conditions"
       ],
       specifications: {
-        sizeRange: "M10 to M24",
-        material: "Chemical resin with hardener",
-        finish: "N/A",
+        sizeRange: "300ml/400ml/165ml cartridge",
+        material: "Vinylester resin",
+        finish: "Gray",
         manufacturer: "NTEICO"
       },
       image: anchoringSystemImage
     },
     {
       id: 3,
-      name: "Wedge Anchor",
+      name: "BCR-900/470/265 EPOXY 21 Chemical Anchor",
       constructionFeatures: [
-        "One-piece anchor for permanent installation",
-        "Immediate load-bearing capability",
-        "Excellent pull-out resistance"
+        "Pure epoxy formulation",
+        "Maximum strength and durability",
+        "Extended working time"
       ],
       specifications: {
-        sizeRange: "1/4\" to 1\"",
-        material: "Carbon steel",
-        finish: "Hot-dip galvanized",
+        sizeRange: "900ml/470ml/265ml cartridge",
+        material: "Epoxy resin",
+        finish: "Gray",
         manufacturer: "NTEICO"
       },
       image: anchoringSystemImage
     },
     {
       id: 4,
-      name: "Drop-In Anchor",
+      name: "NT-DA Drop-IN Anchor",
       constructionFeatures: [
         "Internal expansion mechanism",
-        "Flush mounting capability",
-        "Easy installation process"
+        "Pre-assembled design",
+        "Edge distance compatibility"
       ],
       specifications: {
-        sizeRange: "M6 to M16",
-        material: "Zinc alloy",
+        sizeRange: "M6 to M20",
+        material: "Carbon steel",
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
@@ -91,14 +91,14 @@ function AnchoringSystems() {
     },
     {
       id: 5,
-      name: "Sleeve Anchor",
+      name: "NT-SA SHIELD Anchor",
       constructionFeatures: [
-        "Versatile anchoring solution",
-        "Full-body expansion",
-        "Removable design"
+        "Four-segment expansion",
+        "High pull-out resistance",
+        "Torque-controlled expansion"
       ],
       specifications: {
-        sizeRange: "3/8\" to 3/4\"",
+        sizeRange: "M8 to M20",
         material: "Carbon steel",
         finish: "Zinc plated",
         manufacturer: "NTEICO"
@@ -107,46 +107,110 @@ function AnchoringSystems() {
     },
     {
       id: 6,
-      name: "Concrete Screw Anchor",
+      name: "Reduce Drop-In Anchor",
       constructionFeatures: [
-        "Self-tapping thread design",
-        "No expansion pressure on base material",
-        "Removable and reusable"
+        "Compact design",
+        "Easy installation",
+        "Flush mounting capability"
       ],
       specifications: {
-        sizeRange: "3/16\" to 3/8\"",
-        material: "Hardened steel",
-        finish: "Blue zinc plated",
-        manufacturer: "NTEICO"
-      },
-      image: anchoringSystemImage
-    },
-    {
-      id: 7,
-      name: "Toggle Bolt",
-      constructionFeatures: [
-        "Spring-loaded wings",
-        "High load capacity in hollow materials",
-        "Easy installation process"
-      ],
-      specifications: {
-        sizeRange: "1/8\" to 1/2\"",
-        material: "Steel",
+        sizeRange: "M6 to M16",
+        material: "Carbon steel",
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
       image: anchoringSystemImage
     },
     {
-      id: 8,
-      name: "Hammer Drive Anchor",
+      id: 7,
+      name: "Through Bolt NT-TB-A2",
       constructionFeatures: [
-        "One-piece expansion anchor",
-        "Quick installation",
+        "Stainless steel A2 grade",
+        "High corrosion resistance",
+        "Mechanical anchoring"
+      ],
+      specifications: {
+        sizeRange: "M8 to M20",
+        material: "Stainless Steel A2",
+        finish: "Natural",
+        manufacturer: "NTEICO"
+      },
+      image: anchoringSystemImage
+    },
+    {
+      id: 8,
+      name: "Through Bolt NT-TB-A4",
+      constructionFeatures: [
+        "Marine grade stainless steel",
+        "Maximum corrosion resistance",
+        "Heavy-duty applications"
+      ],
+      specifications: {
+        sizeRange: "M8 to M20",
+        material: "Stainless Steel A4",
+        finish: "Natural",
+        manufacturer: "NTEICO"
+      },
+      image: anchoringSystemImage
+    },
+    {
+      id: 9,
+      name: "Through Bolt NT-TB-HDG",
+      constructionFeatures: [
+        "Hot-dip galvanized coating",
+        "Excellent outdoor durability",
         "Cost-effective solution"
       ],
       specifications: {
-        sizeRange: "6mm to 14mm",
+        sizeRange: "M8 to M20",
+        material: "Carbon steel",
+        finish: "Hot-dip galvanized",
+        manufacturer: "NTEICO"
+      },
+      image: anchoringSystemImage
+    },
+    {
+      id: 10,
+      name: "Through Bolt NT-TB1",
+      constructionFeatures: [
+        "Standard duty design",
+        "Versatile applications",
+        "Easy installation"
+      ],
+      specifications: {
+        sizeRange: "M8 to M16",
+        material: "Carbon steel",
+        finish: "Zinc plated",
+        manufacturer: "NTEICO"
+      },
+      image: anchoringSystemImage
+    },
+    {
+      id: 11,
+      name: "Through Bolt NT-TB7",
+      constructionFeatures: [
+        "Heavy-duty performance",
+        "High tensile strength",
+        "Premium quality steel"
+      ],
+      specifications: {
+        sizeRange: "M10 to M24",
+        material: "High-grade carbon steel",
+        finish: "Zinc plated",
+        manufacturer: "NTEICO"
+      },
+      image: anchoringSystemImage
+    },
+    {
+      id: 12,
+      name: "Through Bolt NWS-CE1",
+      constructionFeatures: [
+        "CE certified design",
+        "European standard compliance",
+        "Professional grade quality"
+      ],
+      specifications: {
+        sizeRange: "M8 to M20",
         material: "Carbon steel",
         finish: "Zinc plated",
         manufacturer: "NTEICO"

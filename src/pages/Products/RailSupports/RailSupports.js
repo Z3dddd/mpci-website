@@ -27,14 +27,14 @@ function RailSupports() {
   const railSupports = [
     {
       id: 1,
-      name: "Standard Rail Clamp",
+      name: "Angle Fittings",
       constructionFeatures: [
-        "Heavy-duty steel construction for maximum durability",
-        "Quick-release mechanism for easy installation and removal",
-        "Anti-vibration padding for noise reduction"
+        "Precision-engineered corner connections",
+        "Multiple mounting configurations",
+        "High load-bearing capacity"
       ],
       specifications: {
-        sizeRange: "20mm to 75mm",
+        sizeRange: "30mm to 90mm",
         material: "Carbon steel",
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
@@ -43,14 +43,14 @@ function RailSupports() {
     },
     {
       id: 2,
-      name: "Adjustable Rail Bracket",
+      name: "Cantilever Arm",
       constructionFeatures: [
-        "Multi-position adjustment capability",
-        "Integrated level indicator for precise alignment",
-        "Load-bearing capacity up to 500kg"
+        "Extended load support capability",
+        "Adjustable mounting positions",
+        "Reinforced structure design"
       ],
       specifications: {
-        sizeRange: "30mm to 100mm",
+        sizeRange: "200mm to 600mm",
         material: "High-strength steel",
         finish: "Powder coated",
         manufacturer: "NTEICO"
@@ -59,14 +59,14 @@ function RailSupports() {
     },
     {
       id: 3,
-      name: "Rail Support Base Plate",
+      name: "Channel Base",
       constructionFeatures: [
-        "Wide base design for enhanced stability",
-        "Pre-drilled mounting holes for easy installation",
-        "Reinforced corners for added strength"
+        "Stable foundation support",
+        "Multiple mounting holes",
+        "Even load distribution"
       ],
       specifications: {
-        sizeRange: "150mm x 150mm to 300mm x 300mm",
+        sizeRange: "100mm to 300mm",
         material: "Steel plate",
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
@@ -75,80 +75,208 @@ function RailSupports() {
     },
     {
       id: 4,
-      name: "Heavy-Duty Rail Guide",
+      name: "Channel Connector",
       constructionFeatures: [
-        "Precision-machined guide surfaces",
-        "Self-lubricating bushings for smooth operation",
-        "Dust-proof seals for extended service life"
+        "Secure joining mechanism",
+        "Easy installation design",
+        "Versatile connection options"
       ],
       specifications: {
-        sizeRange: "40mm to 120mm",
-        material: "Alloy steel",
-        finish: "Black oxide coating",
-        manufacturer: "NTEICO"
-      },
-      image: railSupportImage
-    },
-    {
-      id: 5,
-      name: "Rail Mounting Bracket",
-      constructionFeatures: [
-        "Universal mounting interface",
-        "Adjustable height settings",
-        "Built-in cable management system"
-      ],
-      specifications: {
-        sizeRange: "25mm to 80mm",
-        material: "Stainless steel",
-        finish: "Brushed finish",
-        manufacturer: "NTEICO"
-      },
-      image: railSupportImage
-    },
-    {
-      id: 6,
-      name: "Seismic Rail Support",
-      constructionFeatures: [
-        "Shock-absorbing design for seismic protection",
-        "Multi-directional movement capability",
-        "High load capacity with safety factor"
-      ],
-      specifications: {
-        sizeRange: "50mm to 150mm",
-        material: "High-tensile steel",
-        finish: "Epoxy coated",
-        manufacturer: "NTEICO"
-      },
-      image: railSupportImage
-    },
-    {
-      id: 7,
-      name: "Rail End Stop",
-      constructionFeatures: [
-        "Energy-absorbing bumper design",
-        "Quick-mount installation system",
-        "Visual position indicators"
-      ],
-      specifications: {
-        sizeRange: "30mm to 90mm",
-        material: "Carbon steel with rubber bumper",
+        sizeRange: "40mm to 100mm",
+        material: "Carbon steel",
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
       image: railSupportImage
     },
     {
-      id: 8,
-      name: "Sliding Rail Support",
+      id: 5,
+      name: "Channel Nut",
       constructionFeatures: [
-        "Low-friction sliding mechanism",
-        "Temperature-compensating design",
-        "Integrated locking system"
+        "Self-aligning design",
+        "Spring-loaded mechanism",
+        "Quick installation feature"
       ],
       specifications: {
-        sizeRange: "35mm to 110mm",
-        material: "Steel with PTFE coating",
-        finish: "Corrosion-resistant coating",
+        sizeRange: "M6 to M12",
+        material: "Carbon steel",
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 6,
+      name: "Channel U Washers",
+      constructionFeatures: [
+        "Enhanced load distribution",
+        "Anti-vibration design",
+        "Corrosion-resistant coating"
+      ],
+      specifications: {
+        sizeRange: "M6 to M12",
+        material: "Stainless steel",
+        finish: "Natural",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 7,
+      name: "Construction Brackets",
+      constructionFeatures: [
+        "Heavy-duty construction",
+        "Multiple mounting options",
+        "Reinforced corners"
+      ],
+      specifications: {
+        sizeRange: "50mm to 150mm",
+        material: "Carbon steel",
+        finish: "Hot-dip galvanized",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 8,
+      name: "Drop in Anchors",
+      constructionFeatures: [
+        "Quick installation design",
+        "High pull-out strength",
+        "Pre-set depth stop"
+      ],
+      specifications: {
+        sizeRange: "M8 to M16",
+        material: "Carbon steel",
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 9,
+      name: "Eye Nut",
+      constructionFeatures: [
+        "360-degree rotation",
+        "High tensile strength",
+        "Smooth inner surface"
+      ],
+      specifications: {
+        sizeRange: "M6 to M20",
+        material: "Carbon steel",
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 10,
+      name: "Flat Fittings",
+      constructionFeatures: [
+        "Versatile mounting options",
+        "Space-saving design",
+        "High strength-to-weight ratio"
+      ],
+      specifications: {
+        sizeRange: "25mm to 100mm",
+        material: "Steel",
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 11,
+      name: "Flat Washers",
+      constructionFeatures: [
+        "Even load distribution",
+        "Precision thickness",
+        "Burr-free edges"
+      ],
+      specifications: {
+        sizeRange: "M6 to M20",
+        material: "Stainless steel",
+        finish: "Natural",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 12,
+      name: "Hex Nuts",
+      constructionFeatures: [
+        "Precise thread matching",
+        "High tensile strength",
+        "Chamfered edges"
+      ],
+      specifications: {
+        sizeRange: "M6 to M20",
+        material: "Carbon steel",
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 13,
+      name: "Hexagonal Coupling Nuts",
+      constructionFeatures: [
+        "Extended thread engagement",
+        "High tensile strength",
+        "Precision machined threads"
+      ],
+      specifications: {
+        sizeRange: "M8 to M16",
+        material: "Carbon steel",
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 14,
+      name: "Slotted U Channel",
+      constructionFeatures: [
+        "Continuous slot design",
+        "High load capacity",
+        "Multiple mounting options"
+      ],
+      specifications: {
+        sizeRange: "41x41mm to 41x82mm",
+        material: "Steel",
+        finish: "Hot-dip galvanized",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 15,
+      name: "Threaded Rods",
+      constructionFeatures: [
+        "Full-length threading",
+        "High tensile strength",
+        "Precise thread pitch"
+      ],
+      specifications: {
+        sizeRange: "M6 to M20",
+        material: "Carbon steel",
+        finish: "Zinc-plated",
+        manufacturer: "NTEICO"
+      },
+      image: railSupportImage
+    },
+    {
+      id: 16,
+      name: "Universal Flange",
+      constructionFeatures: [
+        "Multi-purpose mounting",
+        "High load capacity",
+        "Versatile connection points"
+      ],
+      specifications: {
+        sizeRange: "50mm to 150mm",
+        material: "Carbon steel",
+        finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
       image: railSupportImage

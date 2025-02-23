@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/mpci-website/static/css/main.fd26b25f.css",
-    "main.js": "/mpci-website/static/js/main.4a09318e.js",
+    "main.css": "/mpci-website/static/css/main.cd6e0396.css",
+    "main.js": "/mpci-website/static/js/main.b0260066.js",
     "static/js/488.8dc36cc3.chunk.js": "/mpci-website/static/js/488.8dc36cc3.chunk.js",
     "static/media/adjustable-pipe-saddle-with-U-Bolt.webp": "/mpci-website/static/media/adjustable-pipe-saddle-with-U-Bolt.b7d22480239d53c86f9c.webp",
+    "static/media/anchoring-system-default.webp": "/mpci-website/static/media/anchoring-system-default.b7d22480239d53c86f9c.webp",
+    "static/media/duct-accessory-default.webp": "/mpci-website/static/media/duct-accessory-default.b7d22480239d53c86f9c.webp",
+    "static/media/seismic-isolator-default.webp": "/mpci-website/static/media/seismic-isolator-default.b7d22480239d53c86f9c.webp",
     "index.html": "/mpci-website/index.html",
-    "main.fd26b25f.css.map": "/mpci-website/static/css/main.fd26b25f.css.map",
-    "main.4a09318e.js.map": "/mpci-website/static/js/main.4a09318e.js.map",
+    "static/media/rail-support-default.webp": "/mpci-website/static/media/rail-support-default.66f1f59819d52476f328.webp",
+    "main.cd6e0396.css.map": "/mpci-website/static/css/main.cd6e0396.css.map",
+    "main.b0260066.js.map": "/mpci-website/static/js/main.b0260066.js.map",
     "488.8dc36cc3.chunk.js.map": "/mpci-website/static/js/488.8dc36cc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd26b25f.css",
-    "static/js/main.4a09318e.js"
+    "static/css/main.cd6e0396.css",
+    "static/js/main.b0260066.js"
   ]
 }

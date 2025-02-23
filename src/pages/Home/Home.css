@@ -141,7 +141,53 @@
 
 .project-image {
   height: 200px;
-  background: url('https://images.unsplash.com/photo-1590644365607-1c5a0c72c150?ixlib=rb-4.0.3') center/cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-image.sobha-creek {
+  background-image: url('../../assets/projects/sobha-creek-vista.webp');
+}
+
+.project-image.binghatti-heights {
+  background-image: url('../../assets/projects/binghatti-heights.webp');
+}
+
+.project-image.azizi-riviera {
+  background-image: url('../../assets/projects/azizi-riviera.webp');
+}
+
+.project-image.justice-palace {
+  background-image: url('../../assets/projects/justice-palace-renovation.webp');
+}
+
+.project-image.railway-stations {
+  background-image: url('../../assets/projects/saudi-railway-passenger-station.webp');
+}
+
+.project-image.kkia {
+  background-image: url('../../assets/projects/king-khalid-international-airport.jpg');
+}
+
+.project-image.ksu {
+  background-image: url('../../assets/projects/king-saud-university.webp');
+}
+
+.project-image.kku {
+  background-image: url('../../assets/projects/king-khalid-university.webp');
+}
+
+.project-image.kap4 {
+  background-image: url('../../assets/projects/kap-4.webp');
+}
+
+.project-image.kfmc {
+  background-image: url('../../assets/projects/king-fahad-medical-city.webp');
+}
+
+.project-image.jeddah-cargo {
+  background-image: url('../../assets/projects/jeddah-cargo.webp');
 }
 
 .project-card h3 {
