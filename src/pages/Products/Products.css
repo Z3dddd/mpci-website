@@ -63,6 +63,10 @@
   background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3');
 }
 
+.product-image.steel-structure {
+  background-image: url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3');
+}
+
 .product-card h2 {
   font-size: 1.5rem;
   margin: 1.5rem;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageHero from '../../../components/PageHero/PageHero';
+import SocialMediaLinks from '../../../components/SocialMediaLinks/SocialMediaLinks';
 import './TeamMember.css';
 
 function TeamMember() {
@@ -22,7 +23,12 @@ function TeamMember() {
         'Successfully delivered over 100 major construction projects',
         'Recognized for excellence in construction management'
       ],
-      education: 'Master\'s in Construction Management'
+      education: 'Master\'s in Construction Management',
+      socialMedia: {
+        linkedin: 'https://www.linkedin.com/in/syed-attaullah-quadri',
+        twitter: 'https://twitter.com/sattaullah',
+        instagram: 'https://www.instagram.com/sattaullah'
+      }
     },
     'amtul-khatija': {
       name: 'Amtul Khatija',
@@ -39,7 +45,12 @@ function TeamMember() {
         'Reduced project environmental impact by 40%',
         'Award-winning designs in sustainable architecture'
       ],
-      education: 'Ph.D. in Architectural Engineering'
+      education: 'Ph.D. in Architectural Engineering',
+      socialMedia: {
+        linkedin: 'https://www.linkedin.com/in/amtul-khatija',
+        twitter: 'https://twitter.com/amtulk',
+        instagram: 'https://www.instagram.com/amtulk'
+      }
     },
     'syed-zaid-quadri': {
       name: 'Syed Zaid Quadri',
@@ -56,7 +67,12 @@ function TeamMember() {
         'Implemented innovative project management systems',
         'Developed comprehensive team training programs'
       ],
-      education: 'Master\'s in Project Management'
+      education: 'Master\'s in Project Management',
+      socialMedia: {
+        linkedin: 'https://www.linkedin.com/in/syed-zaid-quadri',
+        twitter: 'https://twitter.com/szaidq',
+        instagram: 'https://www.instagram.com/szaidq'
+      }
     }
   };
 
@@ -108,6 +124,7 @@ function TeamMember() {
             <div className="education-section">
               <h2>Education</h2>
               <p>{member.education}</p>
+              <SocialMediaLinks links={member.socialMedia} />
             </div>
           </div>
           

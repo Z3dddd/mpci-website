@@ -78,6 +78,17 @@ function Products() {
               <li>Durable materials</li>
             </ul>
           </Link>
+
+          <Link to="/mpci-website/products/steel-structures" className="product-card">
+            <div className="product-image steel-structure"></div>
+            <h2>Steel Structures</h2>
+            <p>Heavy-duty steel structural solutions for industrial applications</p>
+            <ul className="product-features">
+              <li>High load capacity</li>
+              <li>Custom configurations</li>
+              <li>Professional installation</li>
+            </ul>
+          </Link>
         </div>
       </div>
     </div>
