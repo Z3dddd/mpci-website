@@ -1,20 +1,31 @@
 {
   "files": {
-    "main.css": "/mpci-website/static/css/main.cd6e0396.css",
-    "main.js": "/mpci-website/static/js/main.b0260066.js",
+    "main.css": "/mpci-website/static/css/main.6d3a6b8c.css",
+    "main.js": "/mpci-website/static/js/main.fa39a179.js",
     "static/js/488.8dc36cc3.chunk.js": "/mpci-website/static/js/488.8dc36cc3.chunk.js",
+    "static/media/sobha-creek-vista.webp": "/mpci-website/static/media/sobha-creek-vista.4f3911e871d118d83902.webp",
+    "static/media/binghatti-heights.webp": "/mpci-website/static/media/binghatti-heights.e20c798674ec71ae491c.webp",
+    "static/media/kap-4.webp": "/mpci-website/static/media/kap-4.1aa52083ebf3402f7721.webp",
+    "static/media/azizi-riviera.webp": "/mpci-website/static/media/azizi-riviera.be31254baf7f8cf3c9b9.webp",
+    "static/media/king-khalid-international-airport.jpg": "/mpci-website/static/media/king-khalid-international-airport.40064c231c2bb29e7de9.jpg",
+    "static/media/king-fahad-medical-city.webp": "/mpci-website/static/media/king-fahad-medical-city.b48362ec849f665da1bf.webp",
+    "static/media/justice-palace-renovation.webp": "/mpci-website/static/media/justice-palace-renovation.94e27fb4c26b732299f6.webp",
+    "static/media/jeddah-cargo.webp": "/mpci-website/static/media/jeddah-cargo.ef4616f2f715b7a0d529.webp",
+    "static/media/king-saud-university.webp": "/mpci-website/static/media/king-saud-university.f7275cc1353f0d198e85.webp",
+    "static/media/king-khalid-university.webp": "/mpci-website/static/media/king-khalid-university.a959f3b6f69a592a871e.webp",
+    "static/media/saudi-railway-passenger-station.webp": "/mpci-website/static/media/saudi-railway-passenger-station.9ae6ebef1171f88c0569.webp",
     "static/media/adjustable-pipe-saddle-with-U-Bolt.webp": "/mpci-website/static/media/adjustable-pipe-saddle-with-U-Bolt.b7d22480239d53c86f9c.webp",
     "static/media/anchoring-system-default.webp": "/mpci-website/static/media/anchoring-system-default.b7d22480239d53c86f9c.webp",
     "static/media/duct-accessory-default.webp": "/mpci-website/static/media/duct-accessory-default.b7d22480239d53c86f9c.webp",
     "static/media/seismic-isolator-default.webp": "/mpci-website/static/media/seismic-isolator-default.b7d22480239d53c86f9c.webp",
     "index.html": "/mpci-website/index.html",
-    "static/media/rail-support-default.webp": "/mpci-website/static/media/rail-support-default.66f1f59819d52476f328.webp",
-    "main.cd6e0396.css.map": "/mpci-website/static/css/main.cd6e0396.css.map",
-    "main.b0260066.js.map": "/mpci-website/static/js/main.b0260066.js.map",
+    "static/media/rail-support-default.webp": "/mpci-website/static/media/rail-support-default.c3610519e6798d4d88f3.webp",
+    "main.6d3a6b8c.css.map": "/mpci-website/static/css/main.6d3a6b8c.css.map",
+    "main.fa39a179.js.map": "/mpci-website/static/js/main.fa39a179.js.map",
     "488.8dc36cc3.chunk.js.map": "/mpci-website/static/js/488.8dc36cc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd6e0396.css",
-    "static/js/main.b0260066.js"
+    "static/css/main.6d3a6b8c.css",
+    "static/js/main.fa39a179.js"
   ]
 }
