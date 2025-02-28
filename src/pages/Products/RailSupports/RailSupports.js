@@ -2,7 +2,22 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../../../components/PageHero/PageHero';
 import './RailSupports.css';
-import railSupportImage from '../../../assets/railsupports/rail-support-default.webp';
+import angleFittings from '../../../assets/railsupports/angle-fittings.webp';
+import cantileverArm from '../../../assets/railsupports/cantilever-arm.webp';
+import channelBase from '../../../assets/railsupports/channel-base.webp';
+import channelConnector from '../../../assets/railsupports/channel-connector.webp';
+import channelNut from '../../../assets/railsupports/channel-nut.webp';
+import channelUWashers from '../../../assets/railsupports/channel-u-washers.webp';
+import constructionBrackets from '../../../assets/railsupports/construction-brackets.webp';
+import dropInAnchors from '../../../assets/railsupports/drop-in-anchors.webp';
+import eyeNut from '../../../assets/railsupports/eye-nut.webp';
+import flatFittings from '../../../assets/railsupports/flat-fittings.webp';
+import flatWashers from '../../../assets/railsupports/flat-washers.webp';
+import hexNuts from '../../../assets/railsupports/hex-nuts.webp';
+import hexagonalCouplingNuts from '../../../assets/railsupports/hexagonal-coupling-nuts.webp';
+import slottedUChannel from '../../../assets/railsupports/slotted-u-channel.webp';
+import threadedRods from '../../../assets/railsupports/threaded-rods.webp';
+import universalFlange from '../../../assets/railsupports/universal-flange.webp';
 
 function RailSupports() {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -39,7 +54,7 @@ function RailSupports() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: angleFittings
     },
     {
       id: 2,
@@ -55,7 +70,7 @@ function RailSupports() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: cantileverArm
     },
     {
       id: 3,
@@ -71,7 +86,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: channelBase
     },
     {
       id: 4,
@@ -87,7 +102,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: channelConnector
     },
     {
       id: 5,
@@ -103,7 +118,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: channelNut
     },
     {
       id: 6,
@@ -119,7 +134,7 @@ function RailSupports() {
         finish: "Natural",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: channelUWashers
     },
     {
       id: 7,
@@ -135,7 +150,7 @@ function RailSupports() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: constructionBrackets
     },
     {
       id: 8,
@@ -151,7 +166,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: dropInAnchors
     },
     {
       id: 9,
@@ -167,7 +182,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: eyeNut
     },
     {
       id: 10,
@@ -183,7 +198,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: flatFittings
     },
     {
       id: 11,
@@ -199,7 +214,7 @@ function RailSupports() {
         finish: "Natural",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: flatWashers
     },
     {
       id: 12,
@@ -215,7 +230,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: hexNuts
     },
     {
       id: 13,
@@ -231,7 +246,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: hexagonalCouplingNuts
     },
     {
       id: 14,
@@ -247,7 +262,7 @@ function RailSupports() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: slottedUChannel
     },
     {
       id: 15,
@@ -263,7 +278,7 @@ function RailSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: threadedRods
     },
     {
       id: 16,
@@ -279,7 +294,7 @@ function RailSupports() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: railSupportImage
+      image: universalFlange
     }
   ];
 

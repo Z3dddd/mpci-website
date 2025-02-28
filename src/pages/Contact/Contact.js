@@ -9,10 +9,10 @@ function Contact() {
     width: "100%"
   };
   
-  // Example location in Dubai, UAE (Dubai Mall area)
+  // Example location in Riyadh, Saudi Arabia (Kingdom Centre area)
   const defaultCenter = {
-    lat: 25.197197,
-    lng: 55.274376
+    lat: 24.711667,
+    lng: 46.674167
   };
 
   return (
@@ -27,13 +27,13 @@ function Contact() {
           <h2>Our Office</h2>
           <div className="info-item">
             <h3>Address</h3>
-            <p>Business Bay</p>
-            <p>Sheikh Zayed Road</p>
-            <p>Dubai, UAE</p>
+            <p>King Fahd Road</p>
+            <p>Al Olaya District</p>
+            <p>Riyadh, Saudi Arabia</p>
           </div>
           <div className="info-item">
             <h3>Phone</h3>
-            <p>+971 4 123 4567</p>
+            <p>+966 51 123 4567</p>
           </div>
           <div className="info-item">
             <h3>Email</h3>

@@ -3,6 +3,32 @@ import { Link } from 'react-router-dom';
 import PageHero from '../../../components/PageHero/PageHero';
 import './PipeSupports.css';
 import adjustablePipeSaddle from '../../../assets/pipesupports/adjustable-pipe-saddle-with-U-Bolt.webp';
+import adjustableRollerHanger from '../../../assets/pipesupports/adjustable-roller-hanger.webp';
+import adjustableRollerStand from '../../../assets/pipesupports/adjustable-roller-stand.webp';
+import beamClamp from '../../../assets/pipesupports/beam-clamp.webp';
+import insulationProtectionShield from '../../../assets/pipesupports/insulation-protection-shield.webp';
+import jHanger from '../../../assets/pipesupports/j-hanger.webp';
+import pipeRoller from '../../../assets/pipesupports/pipe-roller.webp';
+import rollerStand from '../../../assets/pipesupports/roller-stand.webp';
+import rubberLinedClevisHanger from '../../../assets/pipesupports/rubber-lined-clevis-hanger.webp';
+import rubberLinedRiserClamp from '../../../assets/pipesupports/rubber-lined-riser-clamp.webp';
+import rubberLinedSplitClamp from '../../../assets/pipesupports/rubber-lined-split-clamp.webp';
+import rubberLinedSwivelClamp from '../../../assets/pipesupports/rubber-lined-swivel-clamp.webp';
+import rubberLinedUBolt from '../../../assets/pipesupports/rubber-lined-u-bolt.webp';
+import rubberLinedUStrapClamp from '../../../assets/pipesupports/rubber-lined-u-strap-clamp.webp';
+import rubberSupportInsert from '../../../assets/pipesupports/rubber-support-insert.webp';
+import spiralDuctClamp from '../../../assets/pipesupports/spiral-duct-clamp.webp';
+import standardClevisHanger from '../../../assets/pipesupports/standard-clevis-hanger.webp';
+import standardRiserClamp from '../../../assets/pipesupports/standard-riser-clamp.webp';
+import standardSplitClamp from '../../../assets/pipesupports/standard-split-clamp.webp';
+import standardSwivelClamp from '../../../assets/pipesupports/standard-swivel-clamp.webp';
+import standardUBolt from '../../../assets/pipesupports/standard-u-bolt.webp';
+import standardUStrapClamp from '../../../assets/pipesupports/standard-u-strap-clamp.webp';
+import steelTurnbuckle from '../../../assets/pipesupports/steel-turnbuckle.webp';
+import strutBeamClamp from '../../../assets/pipesupports/strut-beam-clamp.webp';
+import threeBoltPipeClamp from '../../../assets/pipesupports/three-bolt-pipe-clamp.webp';
+import twoBoltClamp from '../../../assets/pipesupports/two-bolt-clamp.webp';
+import yokeClamp from '../../../assets/pipesupports/yoke-clamp.webp';
 
 function PipeSupports() {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -55,7 +81,7 @@ function PipeSupports() {
         finish: "Zinc-plated or custom coating available",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: adjustableRollerHanger
     },
     {
       id: 3,
@@ -70,7 +96,7 @@ function PipeSupports() {
         finish: "Industrial-grade powder coating",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: adjustableRollerStand
     },
     {
       id: 4,
@@ -85,7 +111,7 @@ function PipeSupports() {
         finish: "Anodized coating",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: beamClamp
     },
     {
       id: 5,
@@ -100,7 +126,7 @@ function PipeSupports() {
         finish: "UV-resistant coating",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: insulationProtectionShield
     },
     {
       id: 6,
@@ -115,7 +141,7 @@ function PipeSupports() {
         finish: "Zinc-chromate plating",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: jHanger
     },
     {
       id: 7,
@@ -130,7 +156,7 @@ function PipeSupports() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: pipeRoller
     },
     {
       id: 8,
@@ -145,7 +171,7 @@ function PipeSupports() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rollerStand
     },
     {
       id: 9,
@@ -160,7 +186,7 @@ function PipeSupports() {
         finish: "Industrial enamel coating",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rubberLinedClevisHanger
     },
     {
       id: 10,
@@ -175,7 +201,7 @@ function PipeSupports() {
         finish: "Epoxy coating",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rubberLinedRiserClamp
     },
     {
       id: 11,
@@ -190,7 +216,7 @@ function PipeSupports() {
         finish: "Zinc-rich primer",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rubberLinedSplitClamp
     },
     {
       id: 12,
@@ -205,7 +231,7 @@ function PipeSupports() {
         finish: "Electro-galvanized",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rubberLinedSwivelClamp
     },
     {
       id: 13,
@@ -220,7 +246,7 @@ function PipeSupports() {
         finish: "Sealed surface",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rubberLinedUBolt
     },
     {
       id: 14,
@@ -235,7 +261,7 @@ function PipeSupports() {
         finish: "Clear anodized",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rubberLinedUStrapClamp
     },
     {
       id: 15,
@@ -250,7 +276,7 @@ function PipeSupports() {
         finish: "High-temp paint coating",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: rubberSupportInsert
     },
     {
       id: 16,
@@ -265,7 +291,7 @@ function PipeSupports() {
         finish: "Passivated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: spiralDuctClamp
     },
     {
       id: 17,
@@ -280,7 +306,7 @@ function PipeSupports() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: standardClevisHanger
     },
     {
       id: 18,
@@ -295,7 +321,7 @@ function PipeSupports() {
         finish: "Epoxy coated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: standardRiserClamp
     },
     {
       id: 19,
@@ -310,7 +336,7 @@ function PipeSupports() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: standardSplitClamp
     },
     {
       id: 20,
@@ -325,7 +351,7 @@ function PipeSupports() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: standardSwivelClamp
     },
     {
       id: 21,
@@ -340,7 +366,7 @@ function PipeSupports() {
         finish: "Mill finish",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: standardUBolt
     },
     {
       id: 22,
@@ -355,7 +381,7 @@ function PipeSupports() {
         finish: "Industrial enamel",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: standardUStrapClamp
     },
     {
       id: 23,
@@ -370,7 +396,7 @@ function PipeSupports() {
         finish: "Primer coated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: steelTurnbuckle
     },
     {
       id: 24,
@@ -385,7 +411,7 @@ function PipeSupports() {
         finish: "Zinc-plated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: strutBeamClamp
     },
     {
       id: 25,
@@ -400,7 +426,7 @@ function PipeSupports() {
         finish: "Epoxy coated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: threeBoltPipeClamp
     },
     {
       id: 26,
@@ -415,7 +441,7 @@ function PipeSupports() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: twoBoltClamp
     },
     {
       id: 27,
@@ -430,7 +456,7 @@ function PipeSupports() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: adjustablePipeSaddle
+      image: yokeClamp
     }
   ];
 

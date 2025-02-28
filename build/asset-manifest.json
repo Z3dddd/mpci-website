@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mpci-website/static/css/main.6d3a6b8c.css",
-    "main.js": "/mpci-website/static/js/main.fa39a179.js",
+    "main.css": "/mpci-website/static/css/main.6ca28ffb.css",
+    "main.js": "/mpci-website/static/js/main.11f2f821.js",
     "static/js/488.8dc36cc3.chunk.js": "/mpci-website/static/js/488.8dc36cc3.chunk.js",
     "static/media/sobha-creek-vista.webp": "/mpci-website/static/media/sobha-creek-vista.4f3911e871d118d83902.webp",
     "static/media/binghatti-heights.webp": "/mpci-website/static/media/binghatti-heights.e20c798674ec71ae491c.webp",
@@ -20,12 +20,12 @@
     "static/media/seismic-isolator-default.webp": "/mpci-website/static/media/seismic-isolator-default.b7d22480239d53c86f9c.webp",
     "index.html": "/mpci-website/index.html",
     "static/media/rail-support-default.webp": "/mpci-website/static/media/rail-support-default.c3610519e6798d4d88f3.webp",
-    "main.6d3a6b8c.css.map": "/mpci-website/static/css/main.6d3a6b8c.css.map",
-    "main.fa39a179.js.map": "/mpci-website/static/js/main.fa39a179.js.map",
+    "main.6ca28ffb.css.map": "/mpci-website/static/css/main.6ca28ffb.css.map",
+    "main.11f2f821.js.map": "/mpci-website/static/js/main.11f2f821.js.map",
     "488.8dc36cc3.chunk.js.map": "/mpci-website/static/js/488.8dc36cc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d3a6b8c.css",
-    "static/js/main.fa39a179.js"
+    "static/css/main.6ca28ffb.css",
+    "static/js/main.11f2f821.js"
   ]
 }
