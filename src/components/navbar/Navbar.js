@@ -21,10 +21,10 @@ function Navbar() {
       <div className="navbar-container">
         <Link to="/mpci-website" className="navbar-logo">
           <div className="logo-wrapper">
-            <span className="company-name">MPCI</span>
+            <span className="company-name">CMSI</span>
             <div className="tagline-wrapper">
-              <span className="company-tagline-top">Modular Prefabricated</span>
-              <span className="company-tagline-bottom">Construction Industry</span>
+              <span className="company-tagline-top">CoreFrame Modular</span>
+              <span className="company-tagline-bottom">Systems Industry</span>
             </div>
           </div>
         </Link>
