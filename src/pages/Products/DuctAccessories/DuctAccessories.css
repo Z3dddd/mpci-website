@@ -4,121 +4,76 @@
 
 .duct-accessories-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 4rem auto;
+  padding: 0 2rem;
 }
 
 .duct-accessories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  padding: 2rem 0;
 }
 
 .duct-accessory-card {
-  position: relative;
-  height: 320px;
-  border-radius: 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.3s ease;
   cursor: pointer;
-  perspective: 1000px;
-  transition: transform 0.5s;
+  position: relative;
+  min-height: 400px;
 }
 
-.duct-accessory-card.zoomed {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-  z-index: 1000;
-  width: 90%;
-  max-width: 600px;
-  height: 80vh;
-  max-height: 800px;
+.duct-accessory-card:hover {
+  transform: translateY(-5px);
 }
 
 .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
+  text-align: center;
 }
 
-.duct-accessory-card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
+.card-front {
+  position: relative;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-back {
-  transform: rotateY(180deg);
-  padding: 1.5rem;
-  overflow-y: auto;
+  background: white;
 }
 
 .duct-accessory-image {
-  width: 100%;
-  height: 200px;
-  background-size: cover;
+  height: 280px;
   background-position: center;
   background-repeat: no-repeat;
-  transition: transform 0.3s ease;
+  background-size: contain;
+  margin-bottom: 20px;
 }
 
 .duct-accessory-content {
-  padding: 1rem;
+  padding: 20px;
+  padding-top: 10px;
 }
 
 .duct-accessory-content h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #333;
+  font-size: 1.2rem;
+  color: #565859;
+  margin-bottom: 1rem;
 }
 
 .duct-accessory-content h3 {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.construction-feature {
-  margin: 0.25rem 0;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.specifications-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0;
-}
-
-.specifications-list li {
-  margin: 0.25rem 0;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.specifications-list strong {
-  color: #444;
+  color: #565859;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
@@ -127,60 +82,169 @@
   position: fixed;
   top: 20px;
   right: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: #fff;
-  border: none;
   font-size: 24px;
   cursor: pointer;
   z-index: 1001;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.construction-feature {
+  color: #000000;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.specifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  text-align: left;
+}
+
+.specifications-list li {
+  color: #000000;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.specifications-list li strong {
+  color: #565859;
+  margin-right: 0.5rem;
 }
 
 .back-button {
-  display: inline-block;
-  margin: 1rem 2rem;
+  position: absolute;
+  top: 100px;
+  left: 2rem;
   padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #333;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: #565859;
   font-weight: 500;
-  transition: color 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
 .back-button:hover {
-  color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Side by side card styles */
+.side-by-side-container {
+  display: flex;
+  gap: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.side-by-side-image-card,
+.side-by-side-info-card {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.side-by-side-image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.side-by-side-image {
+  flex: 1;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  min-height: 400px;
+}
+
+.side-by-side-image-card .duct-accessory-content {
+  width: 100%;
+  background: white;
+  border-top: 1px solid #eee;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.side-by-side-image-card .duct-accessory-content h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #565859;
+}
+
+.side-by-side-info-card {
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.side-by-side-info-card h2 {
+  font-size: 1.8rem;
+  color: #565859;
+  margin-bottom: 2rem;
+}
+
+.side-by-side-info-card h3 {
+  color: #565859;
+  font-size: 1.4rem;
+  margin: 1.5rem 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  .duct-accessories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
   .duct-accessories-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
   }
-
-  .duct-accessory-card.zoomed {
-    width: 95%;
+  
+  .side-by-side-container {
+    flex-direction: column;
     height: 90vh;
-    transform: translate(-50%, -50%) scale(1.1);
   }
-}
 
-@media (max-width: 480px) {
-  .duct-accessories-container {
+  .side-by-side-image-card {
     padding: 1rem;
   }
 
-  .duct-accessories-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .side-by-side-image {
+    min-height: 250px;
   }
 
-  .duct-accessory-card.zoomed {
-    width: 100%;
-    height: 95vh;
-    transform: translate(-50%, -50%) scale(1);
+  .side-by-side-info-card {
+    height: 60%;
   }
 } 

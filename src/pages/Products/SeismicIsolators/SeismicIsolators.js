@@ -2,45 +2,44 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../../../components/PageHero/PageHero';
 import './SeismicIsolators.css';
-import seismicIsolatorImage from '../../../assets/seismicisolators/seismic-isolator-default.webp';
+
+// Import all product images
+import antiVibrationHanger from '../../../assets/seismicisolators/anti-vibration-hanger.webp';
+import antiVibrationMount from '../../../assets/seismicisolators/anti-vibration-mount.webp';
+import cableAnchorFitting from '../../../assets/seismicisolators/cable-anchor-fitting.webp';
+import combinationHanger from '../../../assets/seismicisolators/combination-hanger.webp';
+import corkSandwichPad from '../../../assets/seismicisolators/cork-sandwich-pad.webp';
+import cupSpringMounts25mm from '../../../assets/seismicisolators/cup-spring-mounts-25mm.webp';
+import cupSpringMounts50mm from '../../../assets/seismicisolators/cup-spring-mounts-50mm.webp';
+import housedSpringMounts25mm from '../../../assets/seismicisolators/housed-spring-mounts-25mm.webp';
+import housedSpringMounts50mm from '../../../assets/seismicisolators/housed-spring-mounts-50mm.webp';
+import metalSandwichPad from '../../../assets/seismicisolators/metal-sandwich-pad.webp';
+import resistantClipRC1 from '../../../assets/seismicisolators/resistant-clip-nt-se-rc1.webp';
+import resistantClipRC2 from '../../../assets/seismicisolators/resistant-clip-nt-se-rc2.webp';
+import ribbedMountingPad from '../../../assets/seismicisolators/ribbed-mounting-pad.webp';
+import ribbedMultiLayerPad from '../../../assets/seismicisolators/ribbed-multi-layer-pad.webp';
+import seismicCable from '../../../assets/seismicisolators/seismic-cable.webp';
+import seismicSnubber from '../../../assets/seismicisolators/seismic-snubber.webp';
+import seismicSpringIsolator25mm from '../../../assets/seismicisolators/seismic-spring-isolator-25mm.webp';
+import seismicSpringIsolator50mm from '../../../assets/seismicisolators/seismic-spring-isolator-50mm.webp';
+import springHanger25mm from '../../../assets/seismicisolators/spring-hanger-25mm.webp';
+import springHanger50mm from '../../../assets/seismicisolators/spring-hanger-50mm.webp';
+import wafflePad from '../../../assets/seismicisolators/waffle-pad.webp';
 
 function SeismicIsolators() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = (productId) => {
-    if (selectedProduct === productId) {
-      setIsFlipped(!isFlipped);
-    } else {
-      setSelectedProduct(productId);
-      setIsFlipped(false);
-      document.body.style.overflow = 'hidden';
-    }
+    setSelectedProduct(productId);
+    document.body.style.overflow = 'hidden';
   };
 
   const handleClose = () => {
     setSelectedProduct(null);
-    setIsFlipped(false);
     document.body.style.overflow = 'auto';
   };
 
   const seismicIsolators = [
-    {
-      id: 1,
-      name: "Air Spring Isolator",
-      constructionFeatures: [
-        "Adjustable air pressure",
-        "Automatic leveling option",
-        "High isolation efficiency"
-      ],
-      specifications: {
-        loadRange: "200 to 5000 kg",
-        material: "Reinforced rubber with steel plates",
-        finish: "Weather-resistant coating",
-        manufacturer: "NTEICO"
-      },
-      image: seismicIsolatorImage
-    },
     {
       id: 2,
       name: "Anti Vibration Hanger",
@@ -55,7 +54,7 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: antiVibrationHanger
     },
     {
       id: 3,
@@ -71,23 +70,7 @@ function SeismicIsolators() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
-    },
-    {
-      id: 4,
-      name: "Base Isolation System",
-      constructionFeatures: [
-        "Lead-rubber bearing design",
-        "High damping capability",
-        "Seismic protection"
-      ],
-      specifications: {
-        loadRange: "1000 to 10000 kg",
-        material: "Lead core with rubber layers",
-        finish: "Protective coating",
-        manufacturer: "NTEICO"
-      },
-      image: seismicIsolatorImage
+      image: antiVibrationMount
     },
     {
       id: 5,
@@ -103,7 +86,7 @@ function SeismicIsolators() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: cableAnchorFitting
     },
     {
       id: 6,
@@ -119,7 +102,7 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: combinationHanger
     },
     {
       id: 7,
@@ -135,7 +118,7 @@ function SeismicIsolators() {
         finish: "Natural/Steel",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: corkSandwichPad
     },
     {
       id: 8,
@@ -151,7 +134,7 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: cupSpringMounts25mm
     },
     {
       id: 9,
@@ -167,7 +150,7 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: cupSpringMounts50mm
     },
     {
       id: 10,
@@ -183,7 +166,7 @@ function SeismicIsolators() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: housedSpringMounts25mm
     },
     {
       id: 11,
@@ -199,7 +182,7 @@ function SeismicIsolators() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: housedSpringMounts50mm
     },
     {
       id: 12,
@@ -215,7 +198,7 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: metalSandwichPad
     },
     {
       id: 13,
@@ -231,7 +214,7 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: resistantClipRC1
     },
     {
       id: 14,
@@ -247,26 +230,10 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: resistantClipRC2
     },
     {
       id: 15,
-      name: "Restrained Spring Mount",
-      constructionFeatures: [
-        "All-directional restraint",
-        "Adjustable height",
-        "Built-in snubbing"
-      ],
-      specifications: {
-        loadRange: "100 to 3500 kg",
-        material: "Steel with rubber elements",
-        finish: "Powder coated",
-        manufacturer: "NTEICO"
-      },
-      image: seismicIsolatorImage
-    },
-    {
-      id: 16,
       name: "Ribbed Mounting Pad",
       constructionFeatures: [
         "Ribbed surface pattern",
@@ -279,10 +246,10 @@ function SeismicIsolators() {
         finish: "Textured surface",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: ribbedMountingPad
     },
     {
-      id: 17,
+      id: 16,
       name: "Ribbed Multi-Layer Pad",
       constructionFeatures: [
         "Multiple layer construction",
@@ -295,10 +262,10 @@ function SeismicIsolators() {
         finish: "Textured surface",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: ribbedMultiLayerPad
     },
     {
-      id: 18,
+      id: 17,
       name: "Seismic Cable",
       constructionFeatures: [
         "High tensile strength",
@@ -311,10 +278,10 @@ function SeismicIsolators() {
         finish: "Galvanized",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: seismicCable
     },
     {
-      id: 19,
+      id: 18,
       name: "Seismic Snubber",
       constructionFeatures: [
         "All-directional protection",
@@ -327,10 +294,10 @@ function SeismicIsolators() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: seismicSnubber
     },
     {
-      id: 20,
+      id: 19,
       name: "Seismic Spring Isolator 25mm",
       constructionFeatures: [
         "25mm seismic rated springs",
@@ -343,10 +310,10 @@ function SeismicIsolators() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: seismicSpringIsolator25mm
     },
     {
-      id: 21,
+      id: 20,
       name: "Seismic Spring Isolator 50mm",
       constructionFeatures: [
         "50mm seismic rated springs",
@@ -359,10 +326,10 @@ function SeismicIsolators() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: seismicSpringIsolator50mm
     },
     {
-      id: 22,
+      id: 21,
       name: "Spring Hanger 25mm",
       constructionFeatures: [
         "25mm spring travel",
@@ -375,10 +342,10 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: springHanger25mm
     },
     {
-      id: 23,
+      id: 22,
       name: "Spring Hanger 50mm",
       constructionFeatures: [
         "50mm spring travel",
@@ -391,23 +358,7 @@ function SeismicIsolators() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
-    },
-    {
-      id: 24,
-      name: "Viscous Damper",
-      constructionFeatures: [
-        "Fluid damping technology",
-        "Temperature-independent performance",
-        "Bidirectional operation"
-      ],
-      specifications: {
-        loadRange: "500 to 8000 kg",
-        material: "Steel housing with viscous fluid",
-        finish: "Corrosion-resistant coating",
-        manufacturer: "NTEICO"
-      },
-      image: seismicIsolatorImage
+      image: springHanger50mm
     },
     {
       id: 25,
@@ -423,9 +374,39 @@ function SeismicIsolators() {
         finish: "Textured surface",
         manufacturer: "NTEICO"
       },
-      image: seismicIsolatorImage
+      image: wafflePad
     }
   ];
+
+  const renderSelectedProduct = (product) => {
+    return (
+      <div className="side-by-side-container">
+        <div className="side-by-side-image-card">
+          <div 
+            className="side-by-side-image"
+            style={{ backgroundImage: `url(${product.image})` }}
+          />
+          <div className="seismic-isolator-content">
+            <h2>{product.name}</h2>
+          </div>
+        </div>
+        <div className="side-by-side-info-card">
+          <h2>{product.name}</h2>
+          <h3>Construction Features:</h3>
+          {product.constructionFeatures.map((feature, index) => (
+            <p key={index} className="construction-feature">{feature}</p>
+          ))}
+          <h3>Product Specifications:</h3>
+          <ul className="specifications-list">
+            <li><strong>Load Range:</strong> {product.specifications.loadRange}</li>
+            <li><strong>Material:</strong> {product.specifications.material}</li>
+            <li><strong>Finish:</strong> {product.specifications.finish}</li>
+            <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="seismic-isolators-page">
@@ -442,7 +423,7 @@ function SeismicIsolators() {
           {seismicIsolators.map((product) => (
             <div 
               key={product.id} 
-              className={`seismic-isolator-card ${selectedProduct === product.id ? 'zoomed' : ''} ${selectedProduct === product.id && isFlipped ? 'flipped' : ''}`}
+              className="seismic-isolator-card"
               onClick={() => handleCardClick(product.id)}
             >
               <div className="card-inner">
@@ -450,25 +431,9 @@ function SeismicIsolators() {
                   <div 
                     className="seismic-isolator-image"
                     style={{ backgroundImage: `url(${product.image})` }}
-                  ></div>
+                  />
                   <div className="seismic-isolator-content">
                     <h2>{product.name}</h2>
-                  </div>
-                </div>
-                <div className="card-back">
-                  <div className="seismic-isolator-content">
-                    <h2>{product.name}</h2>
-                    <h3>Construction Features:</h3>
-                    {product.constructionFeatures.map((feature, index) => (
-                      <p key={index} className="construction-feature">{feature}</p>
-                    ))}
-                    <h3>Product Specifications:</h3>
-                    <ul className="specifications-list">
-                      <li><strong>Load Range:</strong> {product.specifications.loadRange}</li>
-                      <li><strong>Material:</strong> {product.specifications.material}</li>
-                      <li><strong>Finish:</strong> {product.specifications.finish}</li>
-                      <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -477,9 +442,12 @@ function SeismicIsolators() {
         </div>
       </div>
       {selectedProduct && (
-        <div className="overlay" onClick={handleClose}>
-          <button className="close-button" onClick={handleClose}>×</button>
-        </div>
+        <>
+          <div className="overlay" onClick={handleClose}>
+            <button className="close-button" onClick={handleClose}>×</button>
+          </div>
+          {renderSelectedProduct(seismicIsolators.find(p => p.id === selectedProduct))}
+        </>
       )}
     </div>
   );

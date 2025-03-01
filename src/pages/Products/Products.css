@@ -25,6 +25,8 @@
   cursor: pointer;
   text-decoration: none;
   display: block;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .product-card:hover {
@@ -37,34 +39,36 @@
   background-size: cover;
   background-repeat: no-repeat;
   transition: transform 0.3s ease;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .product-image.pipe-supports {
-  background-image: url('https://images.unsplash.com/photo-1635001056605-c3cca0c56302?ixlib=rb-4.0.3');
+  background: linear-gradient(135deg, #2c3e50, #bdc3c7);
 }
 
 .product-image.modular-systems {
-  background-image: url('https://images.unsplash.com/photo-1581091226825-c6a89e7e4801?ixlib=rb-4.0.3');
+  background: linear-gradient(135deg, #373737, #8e8e8e);
 }
 
 .product-image.rail-supports {
-  background-image: url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3');
+  background: linear-gradient(135deg, #232526, #414345);
 }
 
 .product-image.anchoring-systems {
-  background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3');
+  background: linear-gradient(135deg, #485563, #29323c);
 }
 
 .product-image.seismic-isolators {
-  background-image: url('https://images.unsplash.com/photo-1581092162384-8987c1d64924?ixlib=rb-4.0.3');
+  background: linear-gradient(135deg, #3f4c6b, #606c88);
 }
 
 .product-image.duct-accessories {
-  background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3');
+  background: linear-gradient(135deg, #757f9a, #d7dde8);
 }
 
 .product-image.steel-structure {
-  background-image: url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3');
+  background: linear-gradient(135deg, #283048, #859398);
 }
 
 .product-card h2 {

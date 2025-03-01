@@ -3,26 +3,25 @@ import { Link } from 'react-router-dom';
 import PageHero from '../../../components/PageHero/PageHero';
 import './SteelStructures.css';
 
+// Import images
+import centerBeamClamp from '../../../assets/steelstructures/center-beam-clamp.webp';
+import constantHangersSupports from '../../../assets/steelstructures/constant-hangers-supports.webp';
+import horizontalConstantSupport from '../../../assets/steelstructures/horizontal-constant-support.webp';
+import horizontalTraveler from '../../../assets/steelstructures/horizontal-traveler.webp';
+import mediumWeldedSteelBracket from '../../../assets/steelstructures/medium-welded-steel-bracket.webp';
+import springCushionRollHanger from '../../../assets/steelstructures/spring-cushion-roll-hanger.webp';
+import variableSpringHanger from '../../../assets/steelstructures/variable-spring-hanger.webp';
+
 function SteelStructures() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  // Placeholder image URL
-  const placeholderImage = 'https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3';
 
   const handleCardClick = (productId) => {
-    if (selectedProduct === productId) {
-      setIsFlipped(!isFlipped);
-    } else {
-      setSelectedProduct(productId);
-      setIsFlipped(false);
-      document.body.style.overflow = 'hidden';
-    }
+    setSelectedProduct(productId);
+    document.body.style.overflow = 'hidden';
   };
 
   const handleClose = () => {
     setSelectedProduct(null);
-    setIsFlipped(false);
     document.body.style.overflow = 'auto';
   };
 
@@ -41,7 +40,7 @@ function SteelStructures() {
         finish: "Zinc-plated or custom coating",
         manufacturer: "NTEICO"
       },
-      image: placeholderImage
+      image: centerBeamClamp
     },
     {
       id: 2,
@@ -57,7 +56,7 @@ function SteelStructures() {
         finish: "Industrial-grade coating",
         manufacturer: "NTEICO"
       },
-      image: placeholderImage
+      image: constantHangersSupports
     },
     {
       id: 3,
@@ -73,7 +72,7 @@ function SteelStructures() {
         finish: "Powder coated",
         manufacturer: "NTEICO"
       },
-      image: placeholderImage
+      image: horizontalConstantSupport
     },
     {
       id: 4,
@@ -89,7 +88,7 @@ function SteelStructures() {
         finish: "Corrosion-resistant coating",
         manufacturer: "NTEICO"
       },
-      image: placeholderImage
+      image: horizontalTraveler
     },
     {
       id: 5,
@@ -105,7 +104,7 @@ function SteelStructures() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: placeholderImage
+      image: mediumWeldedSteelBracket
     },
     {
       id: 6,
@@ -121,7 +120,7 @@ function SteelStructures() {
         finish: "Anti-corrosion coating",
         manufacturer: "NTEICO"
       },
-      image: placeholderImage
+      image: springCushionRollHanger
     },
     {
       id: 7,
@@ -137,9 +136,39 @@ function SteelStructures() {
         finish: "Zinc-chromate plating",
         manufacturer: "NTEICO"
       },
-      image: placeholderImage
+      image: variableSpringHanger
     }
   ];
+
+  const renderSelectedProduct = (product) => {
+    return (
+      <div className="side-by-side-container">
+        <div className="side-by-side-image-card">
+          <div 
+            className="side-by-side-image"
+            style={{ backgroundImage: `url(${product.image})` }}
+          />
+          <div className="steel-structure-content">
+            <h2>{product.name}</h2>
+          </div>
+        </div>
+        <div className="side-by-side-info-card">
+          <h2>{product.name}</h2>
+          <h3>Construction Features:</h3>
+          {product.constructionFeatures.map((feature, index) => (
+            <p key={index} className="construction-feature">{feature}</p>
+          ))}
+          <h3>Product Specifications:</h3>
+          <ul className="specifications-list">
+            <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
+            <li><strong>Material:</strong> {product.specifications.material}</li>
+            <li><strong>Finish:</strong> {product.specifications.finish}</li>
+            <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="steel-structures-page">
@@ -156,7 +185,7 @@ function SteelStructures() {
           {steelStructures.map((product) => (
             <div 
               key={product.id} 
-              className={`steel-structure-card ${selectedProduct === product.id ? 'zoomed' : ''} ${selectedProduct === product.id && isFlipped ? 'flipped' : ''}`}
+              className="steel-structure-card"
               onClick={() => handleCardClick(product.id)}
             >
               <div className="card-inner">
@@ -164,25 +193,9 @@ function SteelStructures() {
                   <div 
                     className="steel-structure-image"
                     style={{ backgroundImage: `url(${product.image})` }}
-                  ></div>
+                  />
                   <div className="steel-structure-content">
                     <h2>{product.name}</h2>
-                  </div>
-                </div>
-                <div className="card-back">
-                  <div className="steel-structure-content">
-                    <h2>{product.name}</h2>
-                    <h3>Construction Features:</h3>
-                    {product.constructionFeatures.map((feature, index) => (
-                      <p key={index} className="construction-feature">{feature}</p>
-                    ))}
-                    <h3>Product Specifications:</h3>
-                    <ul className="specifications-list">
-                      <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
-                      <li><strong>Material:</strong> {product.specifications.material}</li>
-                      <li><strong>Finish:</strong> {product.specifications.finish}</li>
-                      <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -191,9 +204,12 @@ function SteelStructures() {
         </div>
       </div>
       {selectedProduct && (
-        <div className="overlay" onClick={handleClose}>
-          <button className="close-button" onClick={handleClose}>×</button>
-        </div>
+        <>
+          <div className="overlay" onClick={handleClose}>
+            <button className="close-button" onClick={handleClose}>×</button>
+          </div>
+          {renderSelectedProduct(steelStructures.find(p => p.id === selectedProduct))}
+        </>
       )}
     </div>
   );

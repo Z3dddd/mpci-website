@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../../../components/PageHero/PageHero';
 import './DuctAccessories.css';
-import ductAccessoryImage from '../../../assets/ductaccessories/duct-accessory-default.webp';
+import aluminiumFoilTape from '../../../assets/ductaccessories/aluminium-foil-tape.webp';
+import aluminiumFskTape from '../../../assets/ductaccessories/aluminium-fsk-tape.webp';
+import boltSlideFlange from '../../../assets/ductaccessories/bolt-slide-flange-system.webp';
+import coat3036 from '../../../assets/ductaccessories/coat-30-36.webp';
+import cornerSlideClamps from '../../../assets/ductaccessories/corner-slide-cleats-clamps.webp';
+import ductSealant from '../../../assets/ductaccessories/duct-sealant-3-17.webp';
+import foamTapeGasket from '../../../assets/ductaccessories/foam-tape-gasket.webp';
+import glue8110 from '../../../assets/ductaccessories/glue-81-10.webp';
 
 function DuctAccessories() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = (productId) => {
-    if (selectedProduct === productId) {
-      setIsFlipped(!isFlipped);
-    } else {
-      setSelectedProduct(productId);
-      setIsFlipped(false);
-      document.body.style.overflow = 'hidden';
-    }
+    setSelectedProduct(productId);
+    document.body.style.overflow = 'hidden';
   };
 
   const handleClose = () => {
     setSelectedProduct(null);
-    setIsFlipped(false);
     document.body.style.overflow = 'auto';
   };
 
@@ -39,7 +39,7 @@ function DuctAccessories() {
         finish: "Bright aluminum",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: aluminiumFoilTape
     },
     {
       id: 2,
@@ -55,7 +55,7 @@ function DuctAccessories() {
         finish: "FSK laminated",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: aluminiumFskTape
     },
     {
       id: 3,
@@ -71,7 +71,7 @@ function DuctAccessories() {
         finish: "Zinc coated",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: boltSlideFlange
     },
     {
       id: 4,
@@ -87,7 +87,7 @@ function DuctAccessories() {
         finish: "Semi-gloss white",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: coat3036
     },
     {
       id: 5,
@@ -103,7 +103,7 @@ function DuctAccessories() {
         finish: "Mill finish",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: cornerSlideClamps
     },
     {
       id: 6,
@@ -119,7 +119,7 @@ function DuctAccessories() {
         finish: "Gray",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: ductSealant
     },
     {
       id: 7,
@@ -135,7 +135,7 @@ function DuctAccessories() {
         finish: "Black",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: foamTapeGasket
     },
     {
       id: 8,
@@ -151,9 +151,39 @@ function DuctAccessories() {
         finish: "Clear",
         manufacturer: "NTEICO"
       },
-      image: ductAccessoryImage
+      image: glue8110
     }
   ];
+
+  const renderSelectedProduct = (product) => {
+    return (
+      <div className="side-by-side-container">
+        <div className="side-by-side-image-card">
+          <div 
+            className="side-by-side-image"
+            style={{ backgroundImage: `url(${product.image})` }}
+          />
+          <div className="duct-accessory-content">
+            <h2>{product.name}</h2>
+          </div>
+        </div>
+        <div className="side-by-side-info-card">
+          <h2>{product.name}</h2>
+          <h3>Construction Features:</h3>
+          {product.constructionFeatures.map((feature, index) => (
+            <p key={index} className="construction-feature">{feature}</p>
+          ))}
+          <h3>Product Specifications:</h3>
+          <ul className="specifications-list">
+            <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
+            <li><strong>Material:</strong> {product.specifications.material}</li>
+            <li><strong>Finish:</strong> {product.specifications.finish}</li>
+            <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="duct-accessories-page">
@@ -170,7 +200,7 @@ function DuctAccessories() {
           {ductAccessories.map((product) => (
             <div 
               key={product.id} 
-              className={`duct-accessory-card ${selectedProduct === product.id ? 'zoomed' : ''} ${selectedProduct === product.id && isFlipped ? 'flipped' : ''}`}
+              className="duct-accessory-card"
               onClick={() => handleCardClick(product.id)}
             >
               <div className="card-inner">
@@ -178,25 +208,9 @@ function DuctAccessories() {
                   <div 
                     className="duct-accessory-image"
                     style={{ backgroundImage: `url(${product.image})` }}
-                  ></div>
+                  />
                   <div className="duct-accessory-content">
                     <h2>{product.name}</h2>
-                  </div>
-                </div>
-                <div className="card-back">
-                  <div className="duct-accessory-content">
-                    <h2>{product.name}</h2>
-                    <h3>Construction Features:</h3>
-                    {product.constructionFeatures.map((feature, index) => (
-                      <p key={index} className="construction-feature">{feature}</p>
-                    ))}
-                    <h3>Product Specifications:</h3>
-                    <ul className="specifications-list">
-                      <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
-                      <li><strong>Material:</strong> {product.specifications.material}</li>
-                      <li><strong>Finish:</strong> {product.specifications.finish}</li>
-                      <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -205,9 +219,12 @@ function DuctAccessories() {
         </div>
       </div>
       {selectedProduct && (
-        <div className="overlay" onClick={handleClose}>
-          <button className="close-button" onClick={handleClose}>×</button>
-        </div>
+        <>
+          <div className="overlay" onClick={handleClose}>
+            <button className="close-button" onClick={handleClose}>×</button>
+          </div>
+          {renderSelectedProduct(ductAccessories.find(p => p.id === selectedProduct))}
+        </>
       )}
     </div>
   );

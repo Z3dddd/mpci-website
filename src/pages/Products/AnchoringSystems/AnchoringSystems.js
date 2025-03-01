@@ -2,25 +2,31 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../../../components/PageHero/PageHero';
 import './AnchoringSystems.css';
-import anchoringSystemImage from '../../../assets/anchoringsystems/anchoring-system-default.webp';
+
+// Import all product images
+import bcrPolySF from '../../../assets/anchoringsystems/bcr-300-400-poly.webp';
+import bcrVinil from '../../../assets/anchoringsystems/bcr-300-400-vinil.webp';
+import bcrEpoxy from '../../../assets/anchoringsystems/bcr-900-470-epoxy.webp';
+import ntDaDropin from '../../../assets/anchoringsystems/nt-da-dropin.webp';
+import ntSaShield from '../../../assets/anchoringsystems/nt-sa-shield.webp';
+import reduceDropin from '../../../assets/anchoringsystems/reduce-dropin.webp';
+import ntTbA2 from '../../../assets/anchoringsystems/nt-tb-a2.webp';
+import ntTbA4 from '../../../assets/anchoringsystems/nt-tb-a4.webp';
+import ntTbHdg from '../../../assets/anchoringsystems/nt-tb-hdg.webp';
+import ntTb1 from '../../../assets/anchoringsystems/nt-tb1.webp';
+import ntTb7 from '../../../assets/anchoringsystems/nt-tb7.webp';
+import nwsCe1 from '../../../assets/anchoringsystems/nws-ce1.webp';
 
 function AnchoringSystems() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = (productId) => {
-    if (selectedProduct === productId) {
-      setIsFlipped(!isFlipped);
-    } else {
-      setSelectedProduct(productId);
-      setIsFlipped(false);
-      document.body.style.overflow = 'hidden';
-    }
+    setSelectedProduct(productId);
+    document.body.style.overflow = 'hidden';
   };
 
   const handleClose = () => {
     setSelectedProduct(null);
-    setIsFlipped(false);
     document.body.style.overflow = 'auto';
   };
 
@@ -39,7 +45,7 @@ function AnchoringSystems() {
         finish: "Gray",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: bcrPolySF
     },
     {
       id: 2,
@@ -55,7 +61,7 @@ function AnchoringSystems() {
         finish: "Gray",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: bcrVinil
     },
     {
       id: 3,
@@ -71,7 +77,7 @@ function AnchoringSystems() {
         finish: "Gray",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: bcrEpoxy
     },
     {
       id: 4,
@@ -87,7 +93,7 @@ function AnchoringSystems() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: ntDaDropin
     },
     {
       id: 5,
@@ -103,7 +109,7 @@ function AnchoringSystems() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: ntSaShield
     },
     {
       id: 6,
@@ -119,7 +125,7 @@ function AnchoringSystems() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: reduceDropin
     },
     {
       id: 7,
@@ -135,7 +141,7 @@ function AnchoringSystems() {
         finish: "Natural",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: ntTbA2
     },
     {
       id: 8,
@@ -151,7 +157,7 @@ function AnchoringSystems() {
         finish: "Natural",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: ntTbA4
     },
     {
       id: 9,
@@ -167,7 +173,7 @@ function AnchoringSystems() {
         finish: "Hot-dip galvanized",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: ntTbHdg
     },
     {
       id: 10,
@@ -183,7 +189,7 @@ function AnchoringSystems() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: ntTb1
     },
     {
       id: 11,
@@ -199,7 +205,7 @@ function AnchoringSystems() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: ntTb7
     },
     {
       id: 12,
@@ -215,9 +221,39 @@ function AnchoringSystems() {
         finish: "Zinc plated",
         manufacturer: "NTEICO"
       },
-      image: anchoringSystemImage
+      image: nwsCe1
     }
   ];
+
+  const renderSelectedProduct = (product) => {
+    return (
+      <div className="side-by-side-container">
+        <div className="side-by-side-image-card">
+          <div 
+            className="side-by-side-image"
+            style={{ backgroundImage: `url(${product.image})` }}
+          />
+          <div className="anchoring-system-content">
+            <h2>{product.name}</h2>
+          </div>
+        </div>
+        <div className="side-by-side-info-card">
+          <h2>{product.name}</h2>
+          <h3>Construction Features:</h3>
+          {product.constructionFeatures.map((feature, index) => (
+            <p key={index} className="construction-feature">{feature}</p>
+          ))}
+          <h3>Product Specifications:</h3>
+          <ul className="specifications-list">
+            <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
+            <li><strong>Material:</strong> {product.specifications.material}</li>
+            <li><strong>Finish:</strong> {product.specifications.finish}</li>
+            <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="anchoring-systems-page">
@@ -234,7 +270,7 @@ function AnchoringSystems() {
           {anchoringSystems.map((product) => (
             <div 
               key={product.id} 
-              className={`anchoring-system-card ${selectedProduct === product.id ? 'zoomed' : ''} ${selectedProduct === product.id && isFlipped ? 'flipped' : ''}`}
+              className="anchoring-system-card"
               onClick={() => handleCardClick(product.id)}
             >
               <div className="card-inner">
@@ -242,25 +278,9 @@ function AnchoringSystems() {
                   <div 
                     className="anchoring-system-image"
                     style={{ backgroundImage: `url(${product.image})` }}
-                  ></div>
+                  />
                   <div className="anchoring-system-content">
                     <h2>{product.name}</h2>
-                  </div>
-                </div>
-                <div className="card-back">
-                  <div className="anchoring-system-content">
-                    <h2>{product.name}</h2>
-                    <h3>Construction Features:</h3>
-                    {product.constructionFeatures.map((feature, index) => (
-                      <p key={index} className="construction-feature">{feature}</p>
-                    ))}
-                    <h3>Product Specifications:</h3>
-                    <ul className="specifications-list">
-                      <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
-                      <li><strong>Material:</strong> {product.specifications.material}</li>
-                      <li><strong>Finish:</strong> {product.specifications.finish}</li>
-                      <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -269,9 +289,12 @@ function AnchoringSystems() {
         </div>
       </div>
       {selectedProduct && (
-        <div className="overlay" onClick={handleClose}>
-          <button className="close-button" onClick={handleClose}>×</button>
-        </div>
+        <>
+          <div className="overlay" onClick={handleClose}>
+            <button className="close-button" onClick={handleClose}>×</button>
+          </div>
+          {renderSelectedProduct(anchoringSystems.find(p => p.id === selectedProduct))}
+        </>
       )}
     </div>
   );

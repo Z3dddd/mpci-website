@@ -32,23 +32,14 @@ import yokeClamp from '../../../assets/pipesupports/yoke-clamp.webp';
 
 function PipeSupports() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = (productId) => {
-    if (selectedProduct === productId) {
-      // If clicking the same card that's already selected, flip it
-      setIsFlipped(!isFlipped);
-    } else {
-      // If clicking a new card, select it and reset flip state
-      setSelectedProduct(productId);
-      setIsFlipped(false);
-      document.body.style.overflow = 'hidden';
-    }
+    setSelectedProduct(productId);
+    document.body.style.overflow = 'hidden';
   };
 
   const handleClose = () => {
     setSelectedProduct(null);
-    setIsFlipped(false);
     document.body.style.overflow = 'auto';
   };
 
@@ -460,6 +451,36 @@ function PipeSupports() {
     }
   ];
 
+  const renderSelectedProduct = (product) => {
+    return (
+      <div className="side-by-side-container">
+        <div className="side-by-side-image-card">
+          <div 
+            className="side-by-side-image"
+            style={{ backgroundImage: `url(${product.image})` }}
+          />
+          <div className="pipe-support-content">
+            <h2>{product.name}</h2>
+          </div>
+        </div>
+        <div className="side-by-side-info-card">
+          <h2>{product.name}</h2>
+          <h3>Construction Features:</h3>
+          {product.constructionFeatures.map((feature, index) => (
+            <p key={index} className="construction-feature">{feature}</p>
+          ))}
+          <h3>Product Specifications:</h3>
+          <ul className="specifications-list">
+            <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
+            <li><strong>Material:</strong> {product.specifications.material}</li>
+            <li><strong>Finish:</strong> {product.specifications.finish}</li>
+            <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="pipe-supports-page">
       <Link to="/mpci-website/products" className="back-button">
@@ -475,7 +496,7 @@ function PipeSupports() {
           {pipeSupports.map((product) => (
             <div 
               key={product.id} 
-              className={`pipe-support-card ${selectedProduct === product.id ? 'zoomed' : ''} ${selectedProduct === product.id && isFlipped ? 'flipped' : ''}`}
+              className="pipe-support-card"
               onClick={() => handleCardClick(product.id)}
             >
               <div className="card-inner">
@@ -483,25 +504,9 @@ function PipeSupports() {
                   <div 
                     className="pipe-support-image"
                     style={{ backgroundImage: `url(${product.image})` }}
-                  ></div>
+                  />
                   <div className="pipe-support-content">
                     <h2>{product.name}</h2>
-                  </div>
-                </div>
-                <div className="card-back">
-                  <div className="pipe-support-content">
-                    <h2>{product.name}</h2>
-                    <h3>Construction Features:</h3>
-                    {product.constructionFeatures.map((feature, index) => (
-                      <p key={index} className="construction-feature">{feature}</p>
-                    ))}
-                    <h3>Product Specifications:</h3>
-                    <ul className="specifications-list">
-                      <li><strong>Size Range:</strong> {product.specifications.sizeRange}</li>
-                      <li><strong>Material:</strong> {product.specifications.material}</li>
-                      <li><strong>Finish:</strong> {product.specifications.finish}</li>
-                      <li><strong>Manufacturer:</strong> {product.specifications.manufacturer}</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -510,9 +515,12 @@ function PipeSupports() {
         </div>
       </div>
       {selectedProduct && (
-        <div className="overlay" onClick={handleClose}>
-          <button className="close-button" onClick={handleClose}>×</button>
-        </div>
+        <>
+          <div className="overlay" onClick={handleClose}>
+            <button className="close-button" onClick={handleClose}>×</button>
+          </div>
+          {renderSelectedProduct(pipeSupports.find(p => p.id === selectedProduct))}
+        </>
       )}
     </div>
   );
