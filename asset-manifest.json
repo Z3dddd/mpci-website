@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mpci-website/static/css/main.35eb92ec.css",
-    "main.js": "/mpci-website/static/js/main.0b5754de.js",
+    "main.js": "/mpci-website/static/js/main.e6bbf913.js",
     "static/js/488.3150c44c.chunk.js": "/mpci-website/static/js/488.3150c44c.chunk.js",
     "static/media/sobha-creek-vista.webp": "/mpci-website/static/media/sobha-creek-vista.4f3911e871d118d83902.webp",
     "static/media/binghatti-heights.webp": "/mpci-website/static/media/binghatti-heights.e20c798674ec71ae491c.webp",
@@ -107,11 +107,11 @@
     "static/media/channel-u-washers.webp": "/mpci-website/static/media/channel-u-washers.98fd5e19f2a7f2564598.webp",
     "index.html": "/mpci-website/index.html",
     "main.35eb92ec.css.map": "/mpci-website/static/css/main.35eb92ec.css.map",
-    "main.0b5754de.js.map": "/mpci-website/static/js/main.0b5754de.js.map",
+    "main.e6bbf913.js.map": "/mpci-website/static/js/main.e6bbf913.js.map",
     "488.3150c44c.chunk.js.map": "/mpci-website/static/js/488.3150c44c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35eb92ec.css",
-    "static/js/main.0b5754de.js"
+    "static/js/main.e6bbf913.js"
   ]
 }
