@@ -299,9 +299,6 @@ function RailSupports() {
             className="side-by-side-image"
             style={{ backgroundImage: `url(${product.image})` }}
           />
-          <div className="rail-support-content">
-            <h2>{product.name}</h2>
-          </div>
         </div>
         <div className="side-by-side-info-card">
           <h2>{product.name}</h2>
